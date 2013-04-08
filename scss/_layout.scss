@@ -1,0 +1,66 @@
+/* =Layout
+----------------------------------------------- */
+
+#page {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.site-main {
+	margin-top: 20px;
+
+	.widget-area {
+		float: left;
+		overflow: hidden;
+	}
+}
+
+.content-area {
+	float: left;
+	width: 100%;
+}
+.site-content {
+	margin: 0 40% 0 0;
+}
+
+/* Sidebars */
+.youtube {
+	margin: 0 0 0 -38%;
+	width: 38%;
+	float: left;
+	@include clearfix;
+
+	ul.ytchagallery.ytccf {
+		margin-top: 20px !important;
+	}
+
+	.ytcliinner {
+		padding-right: 11px !important;
+	}
+
+	.ytccell-3,
+	.ytccell-6,
+	.ytccell-9 {
+		.ytcliinner {
+			padding-right: 0 !important;
+		}
+	}
+
+}
+#secondary {
+	// padding-right: 1%;
+	margin: 604px 1% 0 -38%;
+	width: 18%;
+}
+#tertiary {
+	// padding-left: 10px;
+	margin: 604px 0 0 -18%;
+	width: 18%;
+}
+
+/* Site footer */
+
+.site-footer {
+	clear: both;
+	width: 100%;
+}
