@@ -36,8 +36,8 @@ function ltr_v4_custom_header_setup() {
 	$args = array(
 		'default-image'          => '',
 		'default-text-color'     => '000',
-		'width'                  => 1000,
-		'height'                 => 250,
+		'width'                  => 960,
+		'height'                 => 300,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'ltr_v4_header_style',
 		'admin-head-callback'    => 'ltr_v4_admin_header_style',
