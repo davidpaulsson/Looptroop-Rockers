@@ -11,6 +11,6 @@
 jQuery(document).ready(function($) {
     
 	// Fitvids
-	$('.widget, .entry-content').fitVids();
+	$('.widget, .entry-content, .format-video').fitVids();
 	
 });
