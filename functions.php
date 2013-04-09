@@ -143,3 +143,12 @@ add_action( 'wp_enqueue_scripts', 'ltr_v4_scripts' );
  * Implement the Custom Header feature
  */
 require( get_template_directory() . '/inc/custom-header.php' );
+
+/**
+ * WordPress doesn't recognize Vimeo URLs without www.
+ * Let's fix that.
+ */
+function ltr_v4_add_vimeo_oembed_correctly() {
+    wp_oembed_add_provider( '#http://(www\.)?vimeo\.com/.*#i', 'http://vimeo.com/api/oembed.{format}', true );
+}
+add_action('init', 'ltr_v4_add_vimeo_oembed_correctly');
