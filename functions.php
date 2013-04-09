@@ -69,7 +69,7 @@ function ltr_v4_setup() {
 	/**
 	 * Enable support for Post Formats
 	 */
-	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
+	add_theme_support( 'post-formats', array( 'image', 'video', 'link' ) );
 }
 endif; // ltr_v4_setup
 add_action( 'after_setup_theme', 'ltr_v4_setup' );
@@ -129,9 +129,9 @@ function ltr_v4_scripts() {
 	wp_enqueue_script( 'looptroop-rockers-v4-scripts', get_template_directory_uri() . '/js/scripts.min.js', array(), '20120206', true );
 	wp_enqueue_script( 'looptroop-rockers-v4-init', get_template_directory_uri() . '/js/ltr.min.js', array('jquery'), '20130115', true );
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
+	// if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+	// 	wp_enqueue_script( 'comment-reply' );
+	// }
 
 	if ( is_singular() && wp_attachment_is_image() ) {
 		wp_enqueue_script( 'looptroop-rockers-v4-keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20120202' );

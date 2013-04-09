@@ -14,6 +14,16 @@ textarea {
 	-webkit-text-size-adjust: none;
 }
 
+/* Entypo */
+@font-face {
+	font-family: 'Entypo';
+	src: url('entypo.eot');
+	src: local('?'),
+		url("entypo.woff") format("woff"),
+		url("entypo.ttf") format("truetype"),
+		url("entypo.svg#entypo") format("svg");
+}
+
 /* Headings */
 h1,
 h2,
@@ -21,7 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: bold;
+	font-weight: $font-weight;
 	padding: 0;
 	color: #333;
 	clear: both;

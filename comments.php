@@ -21,6 +21,8 @@
 		return;
 ?>
 
+	<hr />
+
 	<div id="comments" class="comments-area">
 		<h3><?php _e('Leave a comment', 'ltr_v4') ?></h3>
 		<div class="fb-comments" data-href="<?php the_permalink(); ?>" data-width="576" data-num-posts="10"></div>

@@ -4,7 +4,59 @@
 .sticky {
 }
 .hentry {
+	clear: both;
 	margin: 0 0 1.5em;
+
+	.post-format {
+		margin-bottom: 1em;
+
+		&.link {
+			text-align: center;
+			margin-top: 10px;
+			h1 {
+				border-bottom: 2px solid $grey;
+				display: inline-block;
+				margin-bottom: 1em;
+			}
+		}
+	}
+
+	.who {
+		float: left;
+		width: 80px;
+		// margin-right: 20px
+		img {
+			@include border-radius(60px);
+		}
+	}
+
+	.post-side {
+		@include clearfix;
+		float: left;
+		width: 496px;
+
+		.entry-meta {
+			color: $light;
+			a {
+				color: $light;
+				font-weight: $font-weight; 
+			}
+		}
+
+		footer.entry-meta {
+			margin-bottom: 4em;
+		}
+	}
+
+	.entry-header {
+		padding-bottom: 1em;
+		border-bottom: 2px solid $grey;
+	}
+
+	hr {
+		clear: both;
+		margin-bottom: 2em;
+	}
 }
 .byline {
 	display: none;

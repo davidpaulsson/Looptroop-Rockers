@@ -19,13 +19,21 @@
 .navigation-main a {
 	display: block;
 	text-decoration: none;
+	background-color: darken($white,10%);
+	padding: 5px 10px;
+	margin-right: 1em; 
+
+	&:hover {
+		background-color: darken($white,20%);
+		color: $black;		
+	}
 }
 .navigation-main ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	display: none;
 	float: left;
 	position: absolute;
-		top: 1.5em;
+		top: 2em;
 		left: 0;
 	z-index: 99999;
 }
@@ -35,6 +43,7 @@
 }
 .navigation-main ul ul a {
 	width: 200px;
+	margin-right: 0;
 }
 .navigation-main ul ul li {
 }
