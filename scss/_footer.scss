@@ -1,0 +1,33 @@
+/* =Footer
+----------------------------------------------- */
+
+.site-footer {
+	margin-top: 2em;
+	padding-top: 2em;
+	border-top: 1px solid #ccc;
+	margin-bottom: 4em;
+
+	font-size: 12px;
+
+	img {
+		float: right;
+	}
+
+	hr {
+		clear: both;
+	}
+
+	.contact,
+	.press,
+	.social {
+		width: 25%;
+		float: left;
+
+		h3,
+		p {
+			padding-right: 20px;
+		}
+
+	}
+
+}
