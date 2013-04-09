@@ -12,6 +12,7 @@
  */
 function ltr_v4_infinite_scroll_setup() {
 	add_theme_support( 'infinite-scroll', array(
+		'type'     	=> 'click',
 		'container' => 'content',
 		'footer'    => 'page',
 	) );
