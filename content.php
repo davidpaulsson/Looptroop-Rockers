@@ -53,14 +53,14 @@
 				</div><!-- .entry-content -->
 			<?php endif; ?>
 
-			<footer class="entry-meta">
-
-				<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'ltr_v4' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark">
-					<?php _e('Leave a comment', 'ltr_v4') ?>
-				</a>
-				<?php edit_post_link( __( 'Edit', 'ltr_v4' ), '<span class="sep"> | </span><span class="edit-link">', '</span>' ); ?>
-			
-			</footer><!-- .entry-meta -->
+			<?php if ( ! is_single() ) { ?>
+				<footer class="entry-meta">
+					<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'ltr_v4' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark">
+						<?php _e('Leave a comment', 'ltr_v4') ?>
+					</a>
+					<?php edit_post_link( __( 'Edit', 'ltr_v4' ), '<span class="sep"> | </span><span class="edit-link">', '</span>' ); ?>
+				</footer><!-- .entry-meta -->
+			<?php } ?>
 		</div><!-- .post-side -->
 	<?php } // End if post format 'link' ?>
 	<hr />
