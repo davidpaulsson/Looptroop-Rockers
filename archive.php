@@ -18,7 +18,7 @@ get_header(); ?>
 				<h1 class="page-title">
 					<?php
 						if ( is_category() ) :
-							printf( __( 'Category Archives: %s', 'ltr_v4' ), '<span>' . single_cat_title( '', false ) . '</span>' );
+							printf( __( '%s', 'ltr_v4' ), '<span>' . single_cat_title( '', false ) . '</span>' );
 
 						elseif ( is_tag() ) :
 							printf( __( 'Tag Archives: %s', 'ltr_v4' ), '<span>' . single_tag_title( '', false ) . '</span>' );
@@ -44,17 +44,11 @@ get_header(); ?>
 						elseif ( is_year() ) :
 							printf( __( 'Yearly Archives: %s', 'ltr_v4' ), '<span>' . get_the_date( 'Y' ) . '</span>' );
 
-						elseif ( is_tax( 'post_format', 'post-format-aside' ) ) :
-							_e( 'Asides', 'ltr_v4' );
-
 						elseif ( is_tax( 'post_format', 'post-format-image' ) ) :
 							_e( 'Images', 'ltr_v4');
 
 						elseif ( is_tax( 'post_format', 'post-format-video' ) ) :
 							_e( 'Videos', 'ltr_v4' );
-
-						elseif ( is_tax( 'post_format', 'post-format-quote' ) ) :
-							_e( 'Quotes', 'ltr_v4' );
 
 						elseif ( is_tax( 'post_format', 'post-format-link' ) ) :
 							_e( 'Links', 'ltr_v4' );
