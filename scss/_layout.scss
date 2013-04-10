@@ -1,6 +1,13 @@
 /* =Layout
 ----------------------------------------------- */
 
+/* Background */
+.page-wrapper {
+	background-color: $white;
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
 #page {
 	margin: 0 auto;
 	width: 960px;

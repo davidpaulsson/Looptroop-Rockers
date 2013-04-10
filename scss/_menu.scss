@@ -6,6 +6,7 @@
 	display: block;
 	float: left;
 	width: 100%;
+	border-bottom: 1px solid #ccc;
 }
 .navigation-main ul {
 	list-style: none;
@@ -15,17 +16,24 @@
 .navigation-main li {
 	float: left;
 	position: relative;
+	margin-bottom: -1px;
+
+	&.current-menu-item a {
+		font-weight: bold;
+		border-bottom: 3px solid $black;
+	}
 }
 .navigation-main a {
 	display: block;
 	text-decoration: none;
-	background-color: darken($white,10%);
-	padding: 5px 10px;
-	margin-right: 1em; 
+	// background-color: darken($white,10%);
+	padding: 8px 10px;
+	// margin-right: 1em; 
+	font-weight: 300;
 
 	&:hover {
-		background-color: darken($white,20%);
-		color: $black;		
+		// background-color: darken($white,20%);
+		// color: $black;		
 	}
 }
 .navigation-main ul ul {
@@ -33,7 +41,7 @@
 	display: none;
 	float: left;
 	position: absolute;
-		top: 2em;
+		top: 41px;
 		left: 0;
 	z-index: 99999;
 }
@@ -44,6 +52,8 @@
 .navigation-main ul ul a {
 	width: 200px;
 	margin-right: 0;
+	background-color: darken($white,10%);
+	padding: 5px 10px;
 }
 .navigation-main ul ul li {
 }
@@ -70,7 +80,7 @@
 	display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
 	.menu-toggle,
 	.main-small-navigation ul.nav-menu.toggled-on {
 		display: block;
