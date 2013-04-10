@@ -4,6 +4,10 @@
 #page {
 	margin: 0 auto;
 	width: 960px;
+
+	@include breakpoint(small) {
+		width: 90%;
+	}
 }
 
 .site-main {
@@ -19,8 +23,13 @@
 	float: left;
 	width: 100%;
 }
+
 .site-content {
 	margin: 0 40% 0 0;
+
+	@include breakpoint(small) {
+		margin-right: 0;
+	}
 }
 
 /* Sidebars */
@@ -46,7 +55,11 @@
 		}
 	}
 
+	@include breakpoint(small) {
+		display: none;
+	}
 }
+
 #secondary {
 	width: 173px;
 

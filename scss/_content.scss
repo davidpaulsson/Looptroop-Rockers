@@ -29,6 +29,11 @@
 		img {
 			@include border-radius(60px);
 		}
+
+		@include breakpoint(small) {
+			display: none;
+		}
+
 	}
 
 	.post-side {
@@ -47,6 +52,10 @@
 
 		footer.entry-meta {
 			margin-bottom: 4em;
+		}
+
+		@include breakpoint(small) {
+			width: 100%;
 		}
 	}
 

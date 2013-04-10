@@ -11,3 +11,11 @@ $white:		#fefefe;
 $black:		#414141;
 $grey:		#333333;
 $light: 	#999999;
+
+/* Media queries */
+
+@mixin breakpoint($point) {
+	@if $point == small {
+		@media (max-width: 650px)  { @content; }
+	}
+}
