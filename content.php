@@ -73,5 +73,5 @@
 			<?php } ?>
 		</div><!-- .post-side -->
 	<?php } // End if post format 'link' ?>
-	<hr />
+	<hr>
 </article><!-- #post-## -->

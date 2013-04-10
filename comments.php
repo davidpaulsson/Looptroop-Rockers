@@ -21,7 +21,7 @@
 		return;
 ?>
 
-	<hr />
+	<hr>
 
 	<div id="comments" class="comments-area">
 		<h3><?php _e('Leave a comment', 'ltr_v4') ?></h3>
