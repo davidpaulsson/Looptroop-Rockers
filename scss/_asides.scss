@@ -6,20 +6,24 @@
 	display: none;
 }
 
+.ytcshort {
+	margin-top: 0 !important;
+}
+
 .widget-area {
 	ul {
 		margin-left: 0;
 
 		li {
-			list-style-type: none;
-			border-bottom: 1px solid #ccc;
 			padding: .5em 0;
+			border-bottom: 1px solid #ccc;
+			list-style-type: none;
 		}
 	}
 
 	.widget_woodojo_instagram {
 		ul li {
-			border-bottom: 0
+			border-bottom: 0;
 		}
 	}
 }
