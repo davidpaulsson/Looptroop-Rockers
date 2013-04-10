@@ -15,5 +15,11 @@ jQuery(document).ready(function($) {
 
 	// Make Instagram pictures play nice with Fancybox
 	$('a.instagram-photo-link').attr('rel', 'fancybox[instagram]');
+
+	// Scroll to top
+	$.scrollUp({
+		animation: 'slide',
+		scrollImg: true
+	});
 	
 });
