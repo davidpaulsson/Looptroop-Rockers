@@ -7,7 +7,7 @@
 ?>
 
 	<div class="youtube facebook sidebar">
-		<?php echo do_shortcode( '[Youtube_Channel_Gallery user="dvsgee" videowidth="365" theme="light" color="white" thumbwidth="112"]' ) ?>
+		<?php echo do_shortcode( '[Youtube_Channel_Gallery user="dvsgee" videowidth="365" thumbwidth="112"]' ) ?>
 		<a href="http://www.youtube.com/user/dvsgee">→ Follow Looptroop Rockers on YouTube</a>
 		<hr>
 		
