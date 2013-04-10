@@ -43,6 +43,7 @@
 				<a href="http://www.bloglovin.com/sv/blog/557880/looptroop-rockers">Follow us on BlogLovin'</a><br>
 				<a href="http://twitter.com/embeemusic">Embee on Twitter</a><br>
 				<a href="http://twitter.com/LooptroopDVSG">Looptroop Rockers on Twitter</a><br>
+				<a href="http://instagram.com/looptroopdvsg">Looptroop Rockers on Instagram</a><br>
 				<a href="http://www.facebook.com/embeemusic">Embee on Facebook</a><br>
 				<a href="http://www.facebook.com/looptrooprockers">Looptroop Rockers on Facebook</a><br>
 				<a href="http://www.youtube.com/user/dvsgee">Looptroop Rockers on Youtube</a><br></p>
