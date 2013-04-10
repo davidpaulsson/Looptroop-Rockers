@@ -48,14 +48,15 @@
 
 }
 #secondary {
-	// padding-right: 1%;
-	margin: 604px 1% 0 -38%;
-	width: 18%;
+	width: 173px;
+
+	iframe {
+		max-width: 173px !important;
+	}
 }
 #tertiary {
-	// padding-left: 10px;
-	margin: 604px 0 0 -18%;
-	width: 18%;
+	width: 173px;
+	float: right;
 }
 
 /* Site footer */

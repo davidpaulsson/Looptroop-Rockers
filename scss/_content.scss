@@ -13,6 +13,7 @@
 		&.link {
 			text-align: center;
 			margin-top: 10px;
+
 			h1 {
 				border-bottom: 2px solid $grey;
 				display: inline-block;
@@ -24,7 +25,7 @@
 	.who {
 		float: left;
 		width: 80px;
-		// margin-right: 20px
+
 		img {
 			@include border-radius(60px);
 		}
@@ -37,6 +38,7 @@
 
 		.entry-meta {
 			color: $light;
+			
 			a {
 				color: $light;
 				font-weight: $font-weight; 

@@ -5,3 +5,31 @@
 .archive .format-aside .entry-title {
 	display: none;
 }
+
+.widget-area {
+	ul {
+		margin-left: 0;
+
+		li {
+			list-style-type: none;
+			border-bottom: 1px solid #ccc;
+			padding: .5em 0;
+		}
+	}
+
+	.widget_woodojo_instagram {
+		ul li {
+			border-bottom: 0
+		}
+	}
+}
+
+h1.widget-title {
+	margin-bottom: .5em;
+}
+
+.news-item {
+	h2 {
+		margin-top: .5em;
+	}
+}

@@ -63,6 +63,8 @@ function ltr_v4_setup() {
 	 * Add image sizes
 	 */	
 	add_image_size( 'post-type-image', 576, 100000 ); // 576 pixels wide by too many pixels tall to prevent croping from the sides
+	add_image_size( 'news-image', 173, 100000 ); // 173 pixels wide by too many pixels tall to prevent croping from the sides
+
 	/**
 	 * This theme uses wp_nav_menu() in one location.
 	 */
@@ -113,9 +115,9 @@ add_action( 'after_setup_theme', 'ltr_v4_register_custom_background' );
  * Register widgetized area and update sidebar with default widgets
  */
 function ltr_v4_widgets_init() {
-	register_sidebars(3, array(
-		'name'          => __( 'Sidebar %d', 'ltr_v4' ),
-		'id'            => 'sidebar-%d',
+	register_sidebar( array(
+		'name'          => __( 'Sidebar', '_s' ),
+		'id'            => 'sidebar-1',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h1 class="widget-title">',
