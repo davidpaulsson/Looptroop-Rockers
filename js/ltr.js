@@ -12,5 +12,8 @@ jQuery(document).ready(function($) {
     
 	// Fitvids
 	$('.widget, .entry-content, .format-video').fitVids();
+
+	// Make Instagram pictures play nice with Fancybox
+	$('a.instagram-photo-link').attr('rel', 'fancybox[instagram]');
 	
 });
