@@ -26,12 +26,12 @@
 			</div>
 
 			<div class="press">
-				<h3>Press / Interviews Sweden</h3>
-				<p><a href="mailto:christian@skiva.se">Christian Östlund</a><br>
-				<a href="http://www.skiva.se">www.skiva.se</a></p>
-			
-				<h3>Press / Interviews outside Sweden</h3>
-				<p><a href="mailto:johan@badtasterecords.se">Johan Nordqvist</a></p>
+				<h3>Press</h3>
+				<p><a href="mailto:petra@looptrooprockers.com">Petra Åkesson</a></p>
+
+				<h3>Label inquires</h3>
+				<p><a href="mailto:claes@looptrooprockers.com">Claes Uggla</a><br />
+				<a href="mailto:jens@looptrooprockers.com">Jens Bengtsson</a></p>
 			
 				<h3>Tour questions / Management</h3>
 				<p><a href="mailto:perry@looptrooprockers.com">Perry Schumi</a></p>
