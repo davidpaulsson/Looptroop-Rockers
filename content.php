@@ -9,7 +9,17 @@
 	<?php if ( has_post_format( 'image' )) { ?>
 		<div class="post-format image">
 			<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'ltr_v4' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark">
-				<img src="<?php the_field('image'); ?>">
+				
+				<?php 
+
+				$attachment_id = get_field('image');
+				$size = 'post-type-image'; // (thumbnail, medium, large, full or custom size)
+
+				echo wp_get_attachment_image( $attachment_id, $size );
+
+				?>
+
+				<!-- <img src="<?php the_field('image'); ?>"> -->
 			</a>
 		</div>
 	<?php } ?>

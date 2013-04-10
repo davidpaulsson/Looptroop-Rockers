@@ -60,6 +60,10 @@ function ltr_v4_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	/**
+	 * Add image sizes
+	 */	
+	add_image_size( 'post-type-image', 576, 100000 ); // 576 pixels wide by too many pixels tall to prevent croping from the sides
+	/**
 	 * This theme uses wp_nav_menu() in one location.
 	 */
 	register_nav_menus( array(
