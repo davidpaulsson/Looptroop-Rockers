@@ -11,6 +11,7 @@
 
 	img {
 		float: right;
+		margin-bottom: 2em;
 
 		@include breakpoint(small) {
 			float: none;
