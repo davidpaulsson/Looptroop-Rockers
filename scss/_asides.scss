@@ -37,3 +37,21 @@ h1.widget-title {
 		margin-top: .5em;
 	}
 }
+
+.jetpack_subscription_widget {
+	input[type="text"] {
+		padding: 5px 14px !important;
+		width: 143px !important;
+	}
+	input[type="submit"] {
+		background: #333;
+		border-radius: 1px;
+		color: #eee;
+		cursor: pointer;
+		text-shadow: none;
+		border: 0;
+		box-shadow: none;
+		font-size: 13px;
+		padding: 8px 16px;
+	}
+}
