@@ -17,7 +17,7 @@
 
 			<div class="contact">
 				<h3>Contact</h3>
-				<p>Visit the contact page, <a href="https://twitter.com/looptroopdvsg/">hit us up on Twitter</a> or use one of the e-mail addresses listed here.</p>
+				<p><a href="https://twitter.com/looptroopdvsg/" rel="me">Hit us up on Twitter</a> or use one of the e-mail addresses listed here.</p>
 			
 				<h3>Bookings</h3>
 				<p><a href="mailto:ola@luger.se">Ola Broquist</a><br />
@@ -41,12 +41,12 @@
 				<h3>Stay connected</h3>
 				<p><a href="http://www.looptrooprockers.com/feed/">Follow the RSS feed</a><br>
 				<a href="http://www.bloglovin.com/sv/blog/557880/looptroop-rockers">Follow us on BlogLovin'</a><br>
-				<a href="http://twitter.com/embeemusic">Embee on Twitter</a><br>
-				<a href="http://twitter.com/LooptroopDVSG">Looptroop Rockers on Twitter</a><br>
-				<a href="http://instagram.com/looptroopdvsg">Looptroop Rockers on Instagram</a><br>
-				<a href="http://www.facebook.com/embeemusic">Embee on Facebook</a><br>
-				<a href="http://www.facebook.com/looptrooprockers">Looptroop Rockers on Facebook</a><br>
-				<a href="http://www.youtube.com/user/dvsgee">Looptroop Rockers on Youtube</a><br></p>
+				<a href="http://twitter.com/embeemusic" rel="me">Embee on Twitter</a><br>
+				<a href="http://twitter.com/LooptroopDVSG" rel="me">Looptroop Rockers on Twitter</a><br>
+				<a href="http://instagram.com/looptroopdvsg" rel="me">Looptroop Rockers on Instagram</a><br>
+				<a href="http://www.facebook.com/embeemusic" rel="me">Embee on Facebook</a><br>
+				<a href="http://www.facebook.com/looptrooprockers" rel="me">Looptroop Rockers on Facebook</a><br>
+				<a href="http://www.youtube.com/user/dvsgee" rel="me">Looptroop Rockers on Youtube</a><br></p>
 			</div>
 
 			<hr>
