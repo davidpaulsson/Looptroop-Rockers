@@ -68,7 +68,7 @@
 					<!-- <a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'ltr_v4' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark">
 						<?php _e('Leave a comment', 'ltr_v4') ?>
 					</a> -->
-					<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'ltr_v4' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><fb:comments-count href=<?php the_permalink(); ?>></fb:comments-count> comments</a>
+					<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'ltr_v4' ), the_title_attribute( 'echo=0' ) ) ); ?>#comments" rel="bookmark"><fb:comments-count href=<?php the_permalink(); ?>></fb:comments-count> comments</a>
 					<?php comments_template(); ?>
 					<?php edit_post_link( __( 'Edit', 'ltr_v4' ), '<span class="sep"> | </span><span class="edit-link">', '</span>' ); ?>
 				</footer><!-- .entry-meta -->
