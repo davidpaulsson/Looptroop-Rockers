@@ -70,6 +70,11 @@
 #secondary {
 	width: 173px;
 
+	// Don't show sharing links in the sidebar
+	.sharedaddy {
+		display: none;
+	}
+
 	iframe {
 		max-width: 173px !important;
 	}
@@ -77,6 +82,11 @@
 #tertiary {
 	float: right;
 	width: 173px;
+
+	// Make tweet timestamp display on it's own line
+	small.time-ago {
+		display: block;
+	}
 }
 
 /* Site footer */
