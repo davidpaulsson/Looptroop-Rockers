@@ -51,7 +51,7 @@
 
 			<hr>
 
-			<p>© Looptroop Rockers <?php echo date('Y') ?> | Site by <a href="http://davidpaulsson.se/">David Paulsson</a> | <a href="https://github.com/davidpaulsson/Looptroop-Rockers-v4/">Want to help out, nerd?</a></p>
+			<p>© Looptroop Rockers <?php echo date('Y') ?> | Site by <a href="http://davidpaulsson.se/">David Paulsson</a> | Hosted by <a href="https://fsdata.se/">FS Data</a> | <a href="https://github.com/davidpaulsson/Looptroop-Rockers-v4/">Want to help out, nerd?</a></p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
