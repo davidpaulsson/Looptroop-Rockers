@@ -64,6 +64,11 @@
 		border-bottom: 2px solid $grey;
 	}
 
+	footer.entry-meta {
+		border-top: 1px solid rgba(0,0,0,.13);
+		padding-top: .5em;
+	}
+
 	hr {
 		clear: both;
 		margin-bottom: 2em;
