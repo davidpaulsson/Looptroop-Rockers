@@ -8,11 +8,13 @@
 	width: 100%;
 	border-bottom: 1px solid #ccc;
 }
+
 .navigation-main ul {
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
 }
+
 .navigation-main li {
 	float: left;
 	position: relative;
@@ -23,19 +25,14 @@
 		border-bottom: 3px solid $black;
 	}
 }
+
 .navigation-main a {
 	display: block;
 	text-decoration: none;
-	// background-color: darken($white,10%);
-	padding: 8px 10px;
-	// margin-right: 1em; 
+	padding: 8px 10px; 
 	font-weight: 300;
-
-	&:hover {
-		// background-color: darken($white,20%);
-		// color: $black;		
-	}
 }
+
 .navigation-main ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	display: none;
@@ -45,48 +42,15 @@
 		left: 0;
 	z-index: 99999;
 }
+
 .navigation-main ul ul ul {
 	left: 100%;
 	top: 0;
 }
+
 .navigation-main ul ul a {
 	width: 200px;
 	margin-right: 0;
 	background-color: darken($white,10%);
 	padding: 5px 10px;
-}
-.navigation-main ul ul li {
-}
-.navigation-main li:hover > a {
-}
-.navigation-main ul ul :hover > a {
-}
-.navigation-main ul ul a:hover {
-}
-.navigation-main ul li:hover > ul {
-	display: block;
-}
-.navigation-main li.current_page_item a,
-.navigation-main li.current-menu-item a {
-}
-
-/* Small menu */
-.menu-toggle {
-	display: none;
-	cursor: pointer;
-}
-
-.main-small-navigation ul {
-	display: none;
-}
-
-@media screen and (max-width: 650px) {
-	.menu-toggle,
-	.main-small-navigation ul.nav-menu.toggled-on {
-		display: block;
-	}
-
-	.navigation-main ul {
-		display: none;
-	}
 }

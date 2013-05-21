@@ -1,3 +1,6 @@
+// Import (prepend) js files
+// @codekit-prepend "jquery.mmenu.js", "skip-link-focus-fix.js", "jquery.fitvids.js", "jquery.scrollUp.js";
+
 // Facebook
 (function(d, s, id) {
 	var js, fjs = d.getElementsByTagName(s)[0];
@@ -10,6 +13,11 @@
 // jQuery
 jQuery(document).ready(function($) {
     
+	// mmenu
+	if ( $(window).width() < 650) {
+		$('#site-navigation').mmenu();
+	}
+
 	// Fitvids
 	$('.widget, .entry-content, .format-video').fitVids();
 

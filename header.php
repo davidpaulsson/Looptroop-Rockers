@@ -36,6 +36,7 @@ var _prum = [['id', '5171813babe53dfa08000000'],
 
 <div class="page-wrapper">
 <div id="page" class="hfeed site">
+	<a href="#site-navigation" class="mmenu-button">Open the menu</a>
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header" role="banner">
 		<hgroup>
@@ -51,9 +52,7 @@ var _prum = [['id', '5171813babe53dfa08000000'],
 		</hgroup>
 
 		<nav id="site-navigation" class="navigation-main" role="navigation">
-			<h1 class="menu-toggle"><?php _e( 'Menu', 'ltr_v4' ); ?></h1>
 			<div class="screen-reader-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'ltr_v4' ); ?>"><?php _e( 'Skip to content', 'ltr_v4' ); ?></a></div>
-
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
