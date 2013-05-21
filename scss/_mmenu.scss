@@ -186,8 +186,7 @@
 	}
 
 	.mmenu li.mmenu-selected > a.mmenu-subopen {
-		// background: transparent;
-		display: none;
+		background: transparent;
 	}
 
 	/*
@@ -195,15 +194,14 @@
 			- open link
 	*/
 	.mmenu a.mmenu-subopen {
-		// border-left: 1px solid #111;
-		// width: 40px;
-		// height: 40px;
-		// padding: 0;
-		// position: absolute;
-		// right: 65px;
-		// top: 0;
-		// z-index: 2;
-		display: none;
+		border-left: 1px solid #111;
+		width: 40px;
+		height: 40px;
+		padding: 0;
+		position: absolute;
+		right: 65px;
+		top: 0;
+		z-index: 2;
 	}
 
 	html.mmenu-right .mmenu a.mmenu-subopen {
