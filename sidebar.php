@@ -53,9 +53,7 @@
 		</div><!-- #secondary -->
 
 		<div id="tertiary" class="widget-area" role="complementary">
-
-			<fb:activity site="http://looptrooprockers.com"></fb:activity>
-
+			
 			<?php do_action( 'before_sidebar' ); ?>
 			<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 
