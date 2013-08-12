@@ -6,12 +6,12 @@ button,
 input,
 select,
 textarea {
+	-webkit-text-size-adjust: none;
 	color: $black;
 	font-family: $font-family;
-	font-weight: $font-weight;
 	font-size: $font-size;
+	font-weight: $font-weight;
 	line-height: $line-height;
-	-webkit-text-size-adjust: none;
 }
 
 /* Headings */
@@ -21,10 +21,10 @@ h3,
 h4,
 h5,
 h6 {
+	clear: both;
+	color: #333;
 	font-weight: $font-weight;
 	padding: 0;
-	color: #333;
-	clear: both;
 }
 h1 {
 	font-size: 24px;
@@ -98,13 +98,13 @@ address {
 pre {
 	background: #eee;
 	font-family: "Courier 10 Pitch", Courier, monospace;
-	font-size: 15px;
 	font-size: 1.5rem;
+	font-size: 15px;
 	line-height: 1.6;
 	margin-bottom: 1.6em;
-	padding: 1.6em;
-	overflow: auto;
 	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
 }
 code, kbd, tt, var {
 	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
@@ -155,10 +155,10 @@ button,
 input,
 select,
 textarea {
+	*vertical-align: middle; /* Improves appearance and consistency in all browsers */
 	font-size: 100%; /* Corrects font size not being inherited in all browsers */
 	margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
 	vertical-align: baseline; /* Improves appearance and consistency in all browsers */
-	*vertical-align: middle; /* Improves appearance and consistency in all browsers */
 }
 button,
 input {
@@ -168,16 +168,16 @@ button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid #ccc;
+	-webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
+	background: #e6e6e6;
 	border-color: #ccc #ccc #bbb #ccc;
 	border-radius: 3px;
-	background: #e6e6e6;
+	border: 1px solid #ccc;
 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
 	color: rgba(0, 0, 0, .8);
 	cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
-	-webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
-	font-size: 12px;
 	font-size: 1.2rem;
+	font-size: 12px;
 	line-height: 1;
 	padding: .6em 1em .4em;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
@@ -206,9 +206,9 @@ input[type="radio"] {
 	padding: 0; /* Addresses excess padding in IE8/9 */
 }
 input[type="search"] {
+	-moz-box-sizing:    content-box;
 	-webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */
 	-webkit-box-sizing: content-box; /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
-	-moz-box-sizing:    content-box;
 	box-sizing:         content-box;
 }
 input[type="search"]::-webkit-search-decoration { /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
@@ -224,9 +224,9 @@ input[type="email"],
 input[type="password"],
 input[type="search"],
 textarea {
-	color: #666;
-	border: 1px solid #ccc;
 	border-radius: 3px;
+	border: 1px solid #ccc;
+	color: #666;
 }
 input[type="text"]:focus,
 input[type="email"]:focus,

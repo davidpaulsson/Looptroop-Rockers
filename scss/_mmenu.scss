@@ -6,9 +6,9 @@
 
 	a.mmenu-button {
 		@include leader();
-		display: inline-block;
 		background-color: #333;
 		color: #eee;
+		display: inline-block;
 		font-size: 13px;
 		padding: 6px 16px;
 	}
@@ -25,8 +25,8 @@
 	html.mmenu-opened,
 	html.mmenu-opened body {
 		height: 100%;
-		width: 100%;
 		overflow: hidden;
+		width: 100%;
 	}
 
 	html.mmenu-opened body {
@@ -34,17 +34,17 @@
 	}
 
 	.mmenu {
+		-webkit-overflow-scrolling: touch;
 		display: none;
-		width: 100%;
 		height: 100%;
-		position: absolute;
-		top: 0;
 		left: 0;
-		z-index: 0;
-		overflow: auto;
 		overflow-x: hidden;
 		overflow-y: auto;
-		-webkit-overflow-scrolling: touch;
+		overflow: auto;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 0;
 	}
 
 	.mmenu,
@@ -59,8 +59,8 @@
 	.mmenu li > a,
 	.mmenu li > span {
 		display: block;
-		padding: 0;
 		margin: 0;
+		padding: 0;
 	}
 
 	.mmenu > ul {
@@ -84,15 +84,14 @@
 	}
 
 	html.mmenu-opened .mmenu-page {
-		box-shadow: 0 0 20px rgba( 0, 0, 0, 0.8 );
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
 		background-color: inherit;
+		box-shadow: 0 0 20px rgba( 0, 0, 0, 0.8 );
+		box-sizing: border-box;
 		min-height: 100%;
 		position: absolute;
 		z-index: 1;
-
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		box-sizing: border-box;
 	}
 
 	#mmenu-blocker {
@@ -102,30 +101,30 @@
 	html.mmenu-opened #mmenu-blocker {
 		background: rgba( 255, 255, 255, 0.1 );
 		display: block;
-		width: 100%;
 		height: 100%;
 		position: absolute;
 		top: 0;
+		width: 100%;
 		z-index: 2;
 	}
 
 	html.mmenu-opened .mmenu-page,
 	html.mmenu-opened #mmenu-blocker {
-		-webkit-transition: left 0.5s ease, right 0.5s ease, margin 0.5s ease;
 		-moz-transition: left 0.5s ease, right 0.5s ease, margin 0.5s ease;
+		-webkit-transition: left 0.5s ease, right 0.5s ease, margin 0.5s ease;
 		transition: left 0.5s ease, right 0.5s ease, margin 0.5s ease;
 	}
 
 	html.mmenu-left.mmenu-opened .mmenu-page,
 	html.mmenu-left.mmenu-opened #mmenu-blocker {
-		margin-left: 0px;
 		left: 0%;
+		margin-left: 0px;
 	}
 
 	html.mmenu-left.mmenu-opening .mmenu-page,
 	html.mmenu-left.mmenu-opening #mmenu-blocker {
-		margin-left: -65px;
 		left: 100%;
+		margin-left: -65px;
 	}
 
 	html.mmenu-right.mmenu-opened .mmenu-page,
@@ -153,9 +152,9 @@
 	}
 
 	.mmenu li {
-		border: none;
-		border-top: 1px solid #444;
 		border-bottom: 1px solid #111;
+		border-top: 1px solid #444;
+		border: none;
 		position: relative;
 	}
 
@@ -165,12 +164,12 @@
 
 	.mmenu li > a,
 	.mmenu li > span {
-		text-indent: 20px;
-		text-overflow: ellipsis;
-		white-space: nowrap;
 		line-height: 40px;
 		overflow: hidden;
 		padding-right: 5px;
+		text-indent: 20px;
+		text-overflow: ellipsis;
+		white-space: nowrap;
 	}
 
 	.mmenu li > a,
@@ -195,12 +194,12 @@
 	*/
 	.mmenu a.mmenu-subopen {
 		border-left: 1px solid #111;
-		width: 40px;
 		height: 40px;
 		padding: 0;
 		position: absolute;
 		right: 65px;
 		top: 0;
+		width: 40px;
 		z-index: 2;
 	}
 
@@ -227,9 +226,9 @@
 	*/
 	.mmenu a.mmenu-subclose {
 		background: #222;
-		text-indent: 40px;
-		padding-top: 10px;
 		margin-top: -10px;
+		padding-top: 10px;
+		text-indent: 40px;
 	}
 
 	/*
@@ -258,17 +257,15 @@
 	}
 
 	.mmenu.mmenu-horizontal ul {
-		width: 50%;
-		margin-left: 0%;
-		float: left;
-
-		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
-		box-sizing: border-box;
-
-		-webkit-transition: margin-left 0.5s ease;
 		-moz-transition: margin-left 0.5s ease;
+		-webkit-box-sizing: border-box;
+		-webkit-transition: margin-left 0.5s ease;
+		box-sizing: border-box;
+		float: left;
+		margin-left: 0%;
 		transition: margin-left 0.5s ease;
+		width: 50%;
 	}
 
 	.mmenu.mmenu-horizontal ul.mmenu-submenu {
@@ -280,8 +277,8 @@
 	}
 
 	.mmenu.mmenu-horizontal ul.mmenu-subopened {
-		margin-left: -50%;
 		height: 100%;
+		margin-left: -50%;
 		overflow: hidden;
 	}
 
@@ -290,34 +287,34 @@
 	*/
 	.mmenu li.mmenu-label {
 		background: #444;
-		font-size: 11px;
 		color: #ccc;
-		text-transform: uppercase;
-		text-indent: 20px;
+		font-size: 11px;
 		line-height: 20px;
+		text-indent: 20px;
+		text-transform: uppercase;
 	}
 
 	/*
 		Counters
 	*/
 	.mmenu em.mmenu-counter {
-		border-radius: 5px;
 		background: #555;
+		border-radius: 5px;
 		box-shadow: 0 0 2px rgba( 0, 0, 0, 0.3 );
-		font-size: 11px;
-		font-weight: bold;
-		font-style: normal;
 		color: #999;
-		text-indent: 0;
-		text-align: center;
-		text-shadow: none;
-		line-height: 22px;
 		display: block;
-		min-width: 20px;
+		font-size: 11px;
+		font-style: normal;
+		font-weight: bold;
 		height: 20px;
+		line-height: 22px;
+		min-width: 20px;
 		padding: 0;
 		position: absolute;
 		right: 105px;
+		text-align: center;
+		text-indent: 0;
+		text-shadow: none;
 		top: 10px;
 	}
 
@@ -346,27 +343,27 @@
 	*/
 	.mmenu a.mmenu-subopen:after,
 	.mmenu a.mmenu-subclose:before {
-		content: '';
-		border: 4px solid rgba( 255, 255, 255, 0.3 );
 		border-left: none;
 		border-top: none;
+		border: 4px solid rgba( 255, 255, 255, 0.3 );
+		content: '';
 		display: block;
-		width: 6px;
 		height: 6px;
 		position: absolute;
+		width: 6px;
 	}
 
 	.mmenu a.mmenu-subopen:after {
+		-webkit-transform: rotate( 315deg );
 		right: 16px;
 		top: 16px;
-		-webkit-transform: rotate( 315deg );
 		transform: rotate( 315deg );
 	}
 
 	.mmenu a.mmenu-subclose:before {
+		-webkit-transform: rotate( 135deg );
 		left: 20px;
 		top: 25px;
-		-webkit-transform: rotate( 135deg );
 		transform: rotate( 135deg );
 	}
 

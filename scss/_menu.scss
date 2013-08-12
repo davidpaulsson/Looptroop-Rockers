@@ -2,55 +2,56 @@
 ----------------------------------------------- */
 
 .navigation-main {
+	border-bottom: 1px solid #ccc;
 	clear: both;
 	display: block;
 	float: left;
 	width: 100%;
-	border-bottom: 1px solid #ccc;
-}
 
-.navigation-main ul {
-	list-style: none;
-	margin: 0;
-	padding-left: 0;
-}
+	ul {
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
 
-.navigation-main li {
-	float: left;
-	position: relative;
-	margin-bottom: -1px;
+		ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			display: none;
+			float: left;
+			left: 0;
+			position: absolute;
+			top: 40px;
+			z-index: 99999;
 
-	&.current-menu-item a {
-		font-weight: bold;
-		border-bottom: 3px solid $black;
+			a {
+				background-color: darken($white,10%);
+				margin-right: 0;
+				padding: 5px 10px;
+				width: 200px;
+			}
+		}
 	}
-}
 
-.navigation-main a {
-	display: block;
-	text-decoration: none;
-	padding: 8px 10px; 
-	font-weight: 300;
-}
+	li {
+		float: left;
+		margin-bottom: -1px;
+		position: relative;
 
-.navigation-main ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	display: none;
-	float: left;
-	position: absolute;
-		top: 41px;
-		left: 0;
-	z-index: 99999;
-}
+		&.current-menu-item a {
+			border-bottom: 3px solid $black;
+			font-weight: bold;
+		}
 
-.navigation-main ul ul ul {
-	left: 100%;
-	top: 0;
-}
+		&:hover {
+			ul.sub-menu {
+				display: block;
+			}
+		}
+	}
 
-.navigation-main ul ul a {
-	width: 200px;
-	margin-right: 0;
-	background-color: darken($white,10%);
-	padding: 5px 10px;
+	a {
+		display: block;
+		font-weight: 300;
+		padding: 8px 10px; 
+		text-decoration: none;
+	}
 }
