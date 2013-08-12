@@ -88,17 +88,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/js\/customizer.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/customizer.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/js\/customizer.min.js",
-      "fileType" : 64
-    },
     "\/js\/skip-link-focus-fix.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -108,6 +97,17 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/js\/skip-link-focus-fix.min.js",
+      "fileType" : 64
+    },
+    "\/js\/customizer.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/customizer.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/js\/customizer.min.js",
       "fileType" : 64
     },
     "\/archive.php" : {
@@ -396,15 +396,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/inc\/custom-header.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/inc\/custom-header.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/scss\/screen.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -416,6 +407,15 @@
       "outputAbbreviatedPath" : "\/css\/screen.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/inc\/custom-header.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/inc\/custom-header.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/scss\/_widgets.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -459,14 +459,16 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
-    "\/search.php" : {
+    "\/img\/top.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/search.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/img\/top.png",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/img\/top.png",
+      "initialSize" : 1749,
+      "fileType" : 8192
     },
     "\/content-page.php" : {
       "ignoreWasSetByUser" : 0,
@@ -486,16 +488,14 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 32768
     },
-    "\/img\/top.png" : {
+    "\/search.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/top.png",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/img\/top.png",
-      "initialSize" : 1749,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/search.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/style.css" : {
       "ignoreWasSetByUser" : 0,
@@ -609,15 +609,6 @@
       "outputAbbreviatedPath" : "\/js\/jquery.scrollUp.min.js",
       "fileType" : 64
     },
-    "\/inc\/template-tags.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/inc\/template-tags.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/scss\/_asides.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -629,6 +620,15 @@
       "outputAbbreviatedPath" : "\/css\/_asides.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/inc\/template-tags.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/inc\/template-tags.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/js\/jquery.fitvids.js" : {
       "ignoreWasSetByUser" : 0,
