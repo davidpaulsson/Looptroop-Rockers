@@ -3,12 +3,13 @@ button,
 input,
 select,
 textarea {
-	color: $color__text-main;
-	font-family: $font__main;
-	@include font-size(1.6);
-	line-height: $font__line-height-body;
+  @include font-size(1.6);
+  font-family: $font__main;
+  font-weight: 300;
+  line-height: $font__line-height-body;
+  color: $color__text-main;
 }
 
-@import "headings";
+@import 'headings';
 
-@import "copy";
+@import 'copy';
