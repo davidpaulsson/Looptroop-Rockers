@@ -44,10 +44,35 @@ module.exports = function(grunt) {
         src: 'Gruntfile.js'
       },
     },
+    sass: {
+      dist: {
+        options: {
+          style: 'expanded',
+          require: 'susy'
+        },
+        files: {
+          'style.css': 'sass/style.scss'
+        }
+      }
+    },
+    autoprefixer: {
+      dist: {
+        src: 'style.css'
+      },
+    },
     watch: {
       gruntfile: {
         files: '<%= jshint.gruntfile.src %>',
-        tasks: ['jshint:gruntfile']
+        tasks: [
+          'jshint:gruntfile'
+        ]
+      },
+      sass: {
+        files: 'sass/**/*.scss',
+        tasks: [
+          'sass',
+          'autoprefixer'
+        ]
       }
     }
   });
@@ -56,6 +81,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-autoprefixer');
 
   // Default task.
   grunt.registerTask('default', ['jshint', 'concat']);
