@@ -2,3 +2,5 @@ node_modules
 *.scssc
 js/looptroop-rockers.js
 js/looptroop-rockers.min.js
+style.css
+style.css.map
