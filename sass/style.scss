@@ -37,6 +37,7 @@ and Blueprint http://www.blueprintcss.org/
 	12.1 Captions
 	12.2 Galleries
 --------------------------------------------------------------*/
+@import "susy";
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
 
@@ -88,6 +89,7 @@ and Blueprint http://www.blueprintcss.org/
 /*--------------------------------------------------------------
 10.0 Content
 --------------------------------------------------------------*/
+@import "layout/content-sidebar";
 @import "site/site";
 
 /*--------------------------------------------------------------

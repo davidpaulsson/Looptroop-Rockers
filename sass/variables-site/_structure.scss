@@ -1,2 +1,7 @@
-$size__site-main: 100%;
-$size__site-sidebar: 25%;
+$susy: (
+  columns: 12,
+  column-width: 4em,
+  gutter-position: inside-static,
+  math: fluid,
+  output: float
+);

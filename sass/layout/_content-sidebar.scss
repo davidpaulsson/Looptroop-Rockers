@@ -1,20 +1,24 @@
-.content-area {
-	float: left;
-	margin: 0 (-$size__site-sidebar) 0 0;
-	width: $size__site-main;
+.site {
+  @include container(960px);
 }
 
-.site-main {
-	margin: 0 $size__site-sidebar 0 0;
+.content-area {
+	@include span(7 of 12);
 }
 
 .site-content .widget-area {
-	float: right;
-	overflow: hidden;
-	width: $size__site-sidebar;
+  @include span(5 of 12 nest);
+
+  &__yt {
+    @include span(5 of 5);
+    margin-bottom: gutter() * 2;
+  }
+  &__one,
+  &__two {
+    @include span(1 of 2)
+  }
 }
 
 .site-footer {
-	clear: both;
-	width: $size__site-main;
+  @include clearfix();
 }
