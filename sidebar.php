@@ -4,10 +4,6 @@
  *
  * @package Looptroop Rockers v5
  */
-
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
-	return;
-}
 ?>
 
 <div id="secondary" class="widget-area" role="complementary">
@@ -52,7 +48,6 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
     <?php dynamic_sidebar( 'sidebar-1' ); ?>
   </div>
   <div class="widget-area__two">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex beatae expedita, iste magnam reiciendis laudantium ab, distinctio blanditiis illo dolor odit, natus, asperiores laboriosam labore perspiciatis neque? Perferendis, est numquam!
-    <?php // dynamic_sidebar( 'sidebar-2' ); ?>
+    <?php dynamic_sidebar( 'sidebar-2' ); ?>
   </div>
 </div><!-- #secondary -->
