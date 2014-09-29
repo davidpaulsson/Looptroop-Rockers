@@ -72,7 +72,10 @@ module.exports = function(grunt) {
         tasks: [
           'sass',
           'autoprefixer'
-        ]
+        ],
+        options: {
+          livereload: true,
+        }
       }
     }
   });
