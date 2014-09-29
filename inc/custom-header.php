@@ -26,8 +26,8 @@ function ltr_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'ltr_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
-		'width'                  => 1000,
-		'height'                 => 250,
+		'width'                  => 960,
+		'height'                 => 300,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'ltr_header_style',
 		'admin-head-callback'    => 'ltr_admin_header_style',
