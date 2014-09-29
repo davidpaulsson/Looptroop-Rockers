@@ -24,6 +24,7 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php ltr_entry_footer(); ?>
+		Sidfot
+		<?php // ltr_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
