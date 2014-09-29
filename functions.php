@@ -112,7 +112,7 @@ add_action( 'widgets_init', 'ltr_widgets_init' );
 function ltr_scripts() {
 	wp_enqueue_style( 'ltr-font', '//fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,300italic,600italic' );
 	wp_enqueue_style( 'ltr-style', get_stylesheet_uri() );
-	wp_enqueue_script( 'ltr-scripts', get_template_directory_uri() . '/js/looptroop-rockers.js', array(), '20120206', true );
+	wp_enqueue_script( 'ltr-scripts', get_template_directory_uri() . '/js/looptroop-rockers.js', array('jquery'), '20120206', true );
 }
 add_action( 'wp_enqueue_scripts', 'ltr_scripts' );
 
