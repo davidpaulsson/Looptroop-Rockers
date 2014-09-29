@@ -34,3 +34,10 @@
 @mixin clearfix-after() {
 	clear: both;
 }
+
+// MQ
+@mixin breakpoint($point) {
+  @if $point == small {
+    @media screen and (max-width: 600px) { @content; }
+  }
+}

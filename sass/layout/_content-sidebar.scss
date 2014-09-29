@@ -1,9 +1,19 @@
 .site {
-  @include container(960px);
+  @include container(1040px);
+  padding: gutter() * 4;
+  background-color: $color__background-body;
+}
+
+.site-header {
+  @include span(12 of 12);
+  margin-bottom: gutter() * 2;
 }
 
 .content-area {
 	@include span(7 of 12);
+  @include breakpoint(small) {
+    @include span(12 of 12);
+  }
 }
 
 .site-content .widget-area {
@@ -17,8 +27,23 @@
   &__two {
     @include span(1 of 2)
   }
+
+  @include breakpoint(small) {
+    display: none;
+  }
+}
+
+.news-item {
+  h4 {
+    margin-top: .25em;
+
+    a {
+      font-weight: 600;
+    }
+  }
 }
 
 .site-footer {
   @include clearfix();
+  @include span(12 of 12);
 }
