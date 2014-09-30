@@ -8,7 +8,70 @@
 
 <div id="secondary" class="widget-area" role="complementary">
   <div class="widget-area__yt">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore et, omnis, voluptate iste, pariatur officiis sunt, nam doloribus fuga corporis quia debitis dolores. Omnis quis labore tenetur tempore, provident dignissimos.
+    <?php
+    error_reporting(E_ALL);
+    $feedURL = 'http://gdata.youtube.com/feeds/api/users/LooptroopRockersVEVO/uploads?max-results=16';
+    // $feedURL = 'http://gdata.youtube.com/feeds/api/users/funkyloffe/uploads?max-results=16';
+    $sxml = simplexml_load_file($feedURL);
+    $i=0;
+    $len = count($sxml->entry);
+
+    foreach ($sxml->entry as $entry) {
+
+      $media = $entry->children('media', true);
+      $watch = (string)$media->group->player->attributes()->url;
+      $thumbnail = (string)$media->group->thumbnail[0]->attributes()->url;
+
+      if ($i==0) {
+        echo apply_filters('the_content', str_replace(array('<p>','</p>'), '', $watch));
+      }
+      ?>
+
+      <div class="videoitem<?php if ($i==0) { ?> active<?php } ?>">
+        <div class="videothumb"><a href="<?php echo $watch; ?>" class="watchvideo"><img src="<?php echo $thumbnail;?>" alt="<?php echo $media->group->title; ?>" /></a></div>
+        <?php /*
+          <div class="videotitle">
+            <h3><a href="<?php echo $watch; ?>" class="watchvideo"><?php echo $media->group->title; ?></a></h3>
+            <p><?php echo $media->group->description; ?></p>
+          </div>
+        */ ?>
+      </div>
+
+      <?php
+      $i++;
+
+      // Continue loop, unless we're at the last
+      // item and we're not at 16 videos yet.
+      if ($i == $len) {
+        if ($i < 16) {
+          error_reporting(E_ALL);
+          $videosLeft = 16 - $i;
+          $feedURL = 'http://gdata.youtube.com/feeds/api/users/dvsgee/uploads?max-results=' . $videosLeft;
+          $sxml = simplexml_load_file($feedURL);
+
+          foreach ($sxml->entry as $entry) {
+            $media = $entry->children('media', true);
+            $watch = (string)$media->group->player->attributes()->url;
+            $thumbnail = (string)$media->group->thumbnail[0]->attributes()->url;
+            ?>
+
+              <div class="videoitem">
+                <div class="videothumb"><a href="<?php echo $watch; ?>" class="watchvideo"><img src="<?php echo $thumbnail;?>" alt="<?php echo $media->group->title; ?>" /></a></div>
+                <?php /*
+                  <div class="videotitle">
+                    <h3><a href="<?php echo $watch; ?>" class="watchvideo"><?php echo $media->group->title; ?></a></h3>
+                    <p><?php echo $media->group->description; ?></p>
+                  </div>
+                */ ?>
+              </div>
+
+            <?php
+          }
+        }
+      }
+    }
+
+    ?>
   </div>
   <div class="widget-area__one">
     <aside class="widget">

@@ -19,7 +19,8 @@ module.exports = function(grunt) {
       dist: {
         src: [
           'js/skip-link-focus-fix.js',
-          'js/navigation.js'
+          'js/navigation.js',
+          'js/videos.js'
         ],
         dest: 'js/looptroop-rockers.js'
       }
@@ -66,6 +67,19 @@ module.exports = function(grunt) {
         tasks: [
           'jshint:gruntfile'
         ]
+      },
+      js: {
+        files: [
+          'js/*.js',
+          '!js/looptroop-rockers.js'
+        ],
+        tasks: [
+          'jshint',
+          'concat'
+        ],
+        options: {
+          livereload: true,
+        }
       },
       sass: {
         files: 'sass/**/*.scss',
