@@ -27,15 +27,9 @@
       }
       ?>
 
-      <div class="videoitem<?php if ($i==0) { ?> active<?php } ?>">
-        <div class="videothumb"><a href="<?php echo $watch; ?>" class="watchvideo"><img src="<?php echo $thumbnail;?>" alt="<?php echo $media->group->title; ?>" /></a></div>
-        <?php /*
-          <div class="videotitle">
-            <h3><a href="<?php echo $watch; ?>" class="watchvideo"><?php echo $media->group->title; ?></a></h3>
-            <p><?php echo $media->group->description; ?></p>
-          </div>
-        */ ?>
-      </div>
+        <div class="videoitem<?php if ($i==0) { ?> active<?php } ?>">
+          <div class="videothumb"><a href="<?php echo $watch; ?>" class="watchvideo"><img src="<?php echo $thumbnail;?>" alt="<?php echo $media->group->title; ?>" /></a></div>
+        </div>
 
       <?php
       $i++;
@@ -57,12 +51,6 @@
 
               <div class="videoitem">
                 <div class="videothumb"><a href="<?php echo $watch; ?>" class="watchvideo"><img src="<?php echo $thumbnail;?>" alt="<?php echo $media->group->title; ?>" /></a></div>
-                <?php /*
-                  <div class="videotitle">
-                    <h3><a href="<?php echo $watch; ?>" class="watchvideo"><?php echo $media->group->title; ?></a></h3>
-                    <p><?php echo $media->group->description; ?></p>
-                  </div>
-                */ ?>
               </div>
 
             <?php
