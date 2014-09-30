@@ -13,7 +13,5 @@
     "test",
     "tests"
   ],
-  "dependencies": {
-    "instafeed.js": "~1.3.2"
-  }
+  "dependencies": {}
 }
