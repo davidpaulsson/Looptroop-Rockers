@@ -31,12 +31,20 @@
 
 .post {
   padding-bottom: gutter() * 2;
-  // margin-bottom: gutter() * 2;
   border-bottom: 1px solid $color__background-hr;
 }
 
 .entry-meta {
   @extend small;
-  padding-bottom: 1em;
-  border-bottom: 2px solid $color__background-hr;
+}
+
+div.sharedaddy h3.sd-title:before {
+  border-top: 0 !important;
+}
+.sd-social-icon .sd-content ul li[class*='share-'] a, .sd-social-icon .sd-content ul li[class*='share-'] a:hover, .sd-social-icon .sd-content ul li[class*='share-'] div.option a {
+  border-radius: 0 !important;
+}
+.sharedaddy {
+  margin-top: 1em;
+  border-top: 1px dotted $color__background-hr;
 }

@@ -31,6 +31,10 @@
   @include breakpoint(small) {
     display: none;
   }
+
+  .sharedaddy {
+    display: none !important;
+  }
 }
 
 .videoitem {
@@ -67,5 +71,42 @@
 
 .site-footer {
   @include clearfix();
-  @include span(12 of 12);
+  @include span(12 of 12 nest);
+  padding-top: 2em;
+  font-size: .8em;
+  border-top: 1px solid $color__background-hr;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  ul {
+    margin-left: 0;
+    list-style-type: none;
+  }
+
+  hr {
+    clear: both;
+  }
+
+  &__logo {
+    @include span(1 of 7);
+    @include breakpoint(small) {
+      @include span(12 of 12);
+      margin-bottom: 2em;
+    }
+  }
+  &__contact,
+  &__press,
+  &__social {
+    @include span(2 of 7);
+
+    @include breakpoint(small) {
+      @include span(12 of 12);
+    }
+  }
+
+
 }
+
+.contact {}
