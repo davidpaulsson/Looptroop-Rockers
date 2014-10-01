@@ -31,9 +31,4 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		Sidfot
-		<?php // ltr_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
