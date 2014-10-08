@@ -5,3 +5,5 @@ js/looptroop-rockers.min.js
 bower_components/*
 style.css
 style.css.map
+js/discography.js
+js/discography.json
