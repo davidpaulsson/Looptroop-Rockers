@@ -20,7 +20,9 @@ module.exports = function(grunt) {
         src: [
           'js/skip-link-focus-fix.js',
           'js/navigation.js',
-          'js/videos.js'
+          'js/videos.js',
+          'js/objsort.js',
+          'js/discography.js'
         ],
         dest: 'js/looptroop-rockers.js'
       }
@@ -61,12 +63,54 @@ module.exports = function(grunt) {
         src: 'style.css'
       },
     },
+    coffee: {
+      dist: {
+        files: {
+          'js/discography.js': 'coffee/disography.coffee'
+        }
+      }
+    },
+    yaml: {
+      dist: {
+        // options: {
+        //   ignored: /^_/,
+        //   space: 4,
+        //   customTypes: {
+        //     '!include scalar': function(value, yamlLoader) {
+        //       return yamlLoader(value);
+        //     },
+        //     '!max sequence': function(values) {
+        //       return Math.max.apply(null, values);
+        //     },
+        //     '!extend mapping': function(value, yamlLoader) {
+        //       return _.extend(yamlLoader(value.basePath), value.partial);
+        //     }
+        //   }
+        // },
+        files: [
+          {
+            src: './discography.yml',
+            dest: 'js/discography.json'
+          }
+        ]
+      },
+    },
     watch: {
       gruntfile: {
         files: '<%= jshint.gruntfile.src %>',
         tasks: [
           'jshint:gruntfile'
         ]
+      },
+      coffee: {
+        files: [
+          'coffee/**/*.coffee'
+        ],
+        tasks: [
+          'coffee',
+          'jshint',
+          'concat'
+        ],
       },
       js: {
         files: [
@@ -80,6 +124,12 @@ module.exports = function(grunt) {
         options: {
           livereload: true,
         }
+      },
+      yaml: {
+        files: '*.yml',
+        tasks: [
+          'yaml'
+        ],
       },
       sass: {
         files: 'sass/**/*.scss',
@@ -100,6 +150,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-contrib-coffee');
+  grunt.loadNpmTasks('grunt-yaml');
 
   // Default task.
   grunt.registerTask('default', ['jshint', 'concat']);

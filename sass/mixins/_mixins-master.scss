@@ -40,4 +40,7 @@
   @if $point == small {
     @media screen and (max-width: 600px) { @content; }
   }
+  @if $point == large {
+    @media screen and (min-width: 601px) { @content; }
+  }
 }

@@ -48,3 +48,55 @@ div.sharedaddy h3.sd-title:before {
   margin-top: 1em;
   border-top: 1px dotted $color__background-hr;
 }
+// Discography
+
+#discography {
+  @include breakpoint(large) {
+    @include full(no-gutters);
+  }
+}
+.album {
+  @include breakpoint(large) {
+    @include gallery(1 of 2);
+  }
+  @include breakpoint(small) {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 1em;
+  }
+  &__release {
+    display: inline;
+    padding: .2em .6em;
+    font-size: 75%;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    background-color: #eee;
+    margin-top: .2em;
+    @include breakpoint(large) {
+      float: right;
+    }
+  }
+  &__cover {
+    @include breakpoint(small) {
+      float: right;
+      width: span(4);
+      margin-left: gutter();
+    }
+  }
+  &__title {
+    margin-top: 0;
+    @include breakpoint(small) {
+      clear: none;
+    }
+  }
+  &__tracks {
+    margin-left: 1.5em;
+    font-size: .8em;
+  }
+  &__track {
+    border-top: 1px solid $color__background-hr;
+    padding: .25em 0;
+  }
+}

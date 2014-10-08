@@ -14,9 +14,11 @@
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-autoprefixer": "^1.0.1",
+    "grunt-contrib-coffee": "^0.11.1",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-jshint": "~0.7.2",
     "grunt-contrib-sass": "^0.8.1",
-    "grunt-contrib-watch": "~0.5.3"
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-yaml": "^0.4.1"
   }
 }
