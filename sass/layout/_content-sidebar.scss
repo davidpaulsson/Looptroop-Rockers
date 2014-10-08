@@ -11,6 +11,9 @@
 
 .content-area {
 	@include span(7 of 12);
+  &--full-width {
+    @include span(12 of 12);
+  }
   @include breakpoint(small) {
     @include span(12 of 12);
   }

@@ -48,6 +48,68 @@ div.sharedaddy h3.sd-title:before {
   margin-top: 1em;
   border-top: 1px dotted $color__background-hr;
 }
+
+// Biography
+
+.biography {
+  background: url("img/bgr-biography.png") no-repeat top center;
+  padding-top: 400px;
+  margin-bottom: 4em;
+
+  h1 {
+    @include span(10 of 12);
+    @include push(1);
+    @include post(1);
+    text-align: center;
+    margin-bottom: 1.5em;
+    @include breakpoint(small) {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 1em;
+      padding-left: .25em;
+      padding-right: .25em;
+      text-align: left;
+    }
+  }
+
+  .site-main > p {
+    @include span(8 of 12);
+    @include push(2);
+    @include post(2);
+    @include breakpoint(small) {
+      margin-left: 0;
+      margin-right: 0;
+      @include span(12 of 12);
+    }
+  }
+
+  blockquote {
+    @include span(12 of 12);
+    font-weight: bold;
+    font-size: 3em;
+    line-height: 1.1;
+    text-align: center;
+    margin: 1em 0;
+
+    @include breakpoint(small) {
+      font-size: 1.5em;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+    + p {
+      margin-top: 1.3em;
+    }
+  }
+
+  @include breakpoint(small) {
+    background-image: none;
+    padding-top: 0;
+  }
+}
+
 // Discography
 
 #discography {
