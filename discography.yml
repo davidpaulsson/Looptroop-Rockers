@@ -367,6 +367,22 @@
 
 -
   artist: Looptroop Rockers
+  title: Slippin'
+  type: Single
+  available_as:
+    - 12"
+    - CDS
+  year: 201402
+  image: http://www.looptrooprockers.com/covers/slippin.jpeg
+  tracks:
+    - Slippin'
+    - We Got Guns
+  external_links:
+    spotify: http://open.spotify.com/album/4y0E5eZYVjWS5FBq3FHMnb
+    itunes: https://itunes.apple.com/se/album/slippin-single/id929650928?l=en
+
+-
+  artist: Looptroop Rockers
   title: Another Love Song / Beautiful Mistake
   type: Single
   available_as:
@@ -558,7 +574,7 @@
   available_as:
     - MC
   year: 199601
-  image: http://www.looptrooprockers.com/covers/from-the-waxcabinet.jpeg
+  image: http://www.looptrooprockers.com/covers/from-the-waxcabinet-MC.jpeg
   tracks:
     - Intro
     - Clichés
@@ -620,7 +636,7 @@
   available_as:
     - MC
   year: 199301
-  image: http://www.looptrooprockers.com/covers/superstars.jpeg
+  image: http://www.looptrooprockers.com/covers/missing.png
   tracks:
     - Intro
     - Nuttstyle

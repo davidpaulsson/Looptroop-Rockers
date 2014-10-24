@@ -47,9 +47,6 @@
   border-bottom: 1px solid white;
   filter: grayscale(100%);
 
-  &:nth-child(4n+5) {
-    border-right: 0;
-  }
   &.active {
     filter: none;
   }

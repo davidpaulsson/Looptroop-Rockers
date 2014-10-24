@@ -33,7 +33,10 @@
 
   listDiscography = (data) ->
 
-    ### Sort obj array ###
+    ###
+     * Sort obj array
+     * http://www.thomasfrank.se/sorting_things.html
+    ###
     data.objSort "year", -1
 
     for item in data
