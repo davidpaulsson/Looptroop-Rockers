@@ -79,7 +79,7 @@
 
         <div class="news-item">
           <?php if ( has_post_thumbnail() ) { ?>
-            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'news-image' ); ?>
+            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'thumbnail' ); ?>
           <?php } ?>
           <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
           <?php the_excerpt(); ?>
