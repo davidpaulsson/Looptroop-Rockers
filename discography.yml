@@ -273,7 +273,7 @@
   type: EP
   available_as:
     - 12"
-  year: 199601
+  year: 199801
   image: http://www.looptrooprockers.com/covers/from-the-waxcabinet.jpeg
   tracks:
     - Intro
@@ -370,8 +370,7 @@
   title: Slippin'
   type: Single
   available_as:
-    - 12"
-    - CDS
+    - Digital
   year: 201402
   image: http://www.looptrooprockers.com/covers/slippin.jpeg
   tracks:
@@ -387,7 +386,7 @@
   type: Single
   available_as:
     - 12"
-    - CDS
+    - Digital
   year: 201401
   image: http://www.looptrooprockers.com/covers/another-love-song_beautiful-mistake.jpeg
   tracks:
@@ -403,8 +402,7 @@
   title: Den obekväma tystnaden (Måns mix)
   type: Single
   available_as:
-    - 12"
-    - CDS
+    - Digital
   year: 201302
   image: http://www.looptrooprockers.com/covers/den-obekvama-tystnaden.jpeg
   tracks:
@@ -418,8 +416,7 @@
   title: Aldrig
   type: Single
   available_as:
-    - 12"
-    - CDS
+    - Digital
   year: 201301
   image: http://www.looptrooprockers.com/covers/aldrig.jpeg
   tracks:
@@ -433,8 +430,7 @@
   title: Hårt mot hårt (feat. Cleo)
   type: Single
   available_as:
-    - 12"
-    - CDS
+    - Digital
   year: 201301
   image: http://www.looptrooprockers.com/covers/hart-mot-hart.jpeg
   tracks:
@@ -448,8 +444,7 @@
   title: Do (feat. Gnucci Banana) [Mash Up International Killa Kazoo Remix]
   type: Single
   available_as:
-    - 12"
-    - CDS
+    - Digital
   year: 201101
   image: http://www.looptrooprockers.com/covers/do.jpeg
   tracks:
@@ -463,8 +458,8 @@
   title: Professional Dreamers
   type: Single
   available_as:
-    - 12"
     - CDS
+    - Digital
   year: 201101
   image: http://www.looptrooprockers.com/covers/professional-dreamers_single.jpeg
   tracks:
@@ -477,25 +472,9 @@
 
 -
   artist: Looptroop Rockers
-  title: Gotta Be A Way (feat. Cunninlynguists)
-  type: Single
-  available_as:
-    - 12"
-    - CDS
-  year: 200401
-  image: http://www.looptrooprockers.com/covers/gotta-be-a-way.jpeg
-  tracks:
-    - Gotta Be A Way
-  external_links:
-    spotify:
-    itunes:
-
--
-  artist: Looptroop Rockers
   title: Naïve
   type: Single
   available_as:
-    - 12"
     - CDS
   year: 200801
   image: http://www.looptrooprockers.com/covers/naive.jpeg
@@ -517,6 +496,7 @@
   image: http://www.looptrooprockers.com/covers/the-building.jpeg
   tracks:
     - The Building
+    - Gotta Be A Way (feat. Cunninlynguists)
   external_links:
     spotify:
     itunes:
@@ -527,7 +507,7 @@
   type: Album
   available_as:
     - LP
-  year:
+  year: 200601
   image: http://www.looptrooprockers.com/covers/punx-not-dead.jpeg
   tracks:
     - Fire
@@ -711,10 +691,9 @@
 -
   artist: Embee
   title: Embeetious Art EP
-  type: Album
+  type: EP
   available_as:
-    - LP
-    - CD
+    - 12"
   year: 200001
   image: http://www.looptrooprockers.com/covers/embeetious-art-ep.jpeg
   tracks:
@@ -733,7 +712,7 @@
   title: Hela världen ser oss
   type: Single
   available_as:
-    - CDS
+    - Digital
   year: 201301
   image: http://www.looptrooprockers.com/covers/hela-varlden-ser-oss.jpeg
   tracks:
@@ -745,9 +724,9 @@
 -
   artist: Embee
   title: Machine Park Jogger
-  type: Single
+  type: EP
   available_as:
-    - CDS
+    - Digital
   year: 201301
   image: http://www.looptrooprockers.com/covers/machine-park-jogger.jpeg
   tracks:
@@ -779,8 +758,8 @@
   title: Retty
   type: Single
   available_as:
-    - CDS
-  year: 200901
+    - Digital
+  year: 201301
   image: http://www.looptrooprockers.com/covers/retty.jpeg
   tracks:
     - Retty
@@ -794,6 +773,7 @@
   type: Single
   available_as:
     - CDS
+    - 12"
   year: 200501
   image: http://www.looptrooprockers.com/covers/send-someone-away.jpeg
   tracks:
@@ -813,8 +793,8 @@
   title: Bondfångeri
   type: Album
   available_as:
-   - LP
    - CD
+   - Digital
   year: 200901
   image: http://www.looptrooprockers.com/covers/bondfangeri.jpeg
   tracks:
@@ -869,10 +849,10 @@
 -
   artist: Promoe
   title: Standard Bearer
-  type: Album
+  type: Album/Documentary
   available_as:
-   - LP
    - CD
+   - DVD
   year: 200701
   image: http://www.looptrooprockers.com/covers/standard-bearer.jpeg
   tracks:
@@ -981,8 +961,7 @@
   title: Never Follow
   type: Single
   available_as:
-   - 12"
-   - CDS
+   - Digital
   year: 201001
   image: http://www.looptrooprockers.com/covers/never-follow.jpeg
   tracks:
@@ -998,8 +977,8 @@
   title: Svennebanan
   type: Single
   available_as:
-   - 12"
    - CDS
+   - Digital
   year: 200901
   image: http://www.looptrooprockers.com/covers/svennebanan.jpeg
   tracks:
@@ -1015,10 +994,9 @@
 -
   artist: Casual Brothers
   title: Customer's Choice EP
-  type: Album
+  type: EP
   available_as:
-   - LP
-   - CD
+   - 12"
   year: 200301
   image: http://www.looptrooprockers.com/covers/customers-choice.jpeg
   tracks:
@@ -1035,10 +1013,9 @@
 -
   artist: Casual Brothers
   title: The Casual Brothers
-  type: Album
+  type: EP
   available_as:
-   - LP
-   - CD
+   - 12"
   year: 200101
   image: http://www.looptrooprockers.com/covers/the-casual-brothers.jpeg
   tracks:
