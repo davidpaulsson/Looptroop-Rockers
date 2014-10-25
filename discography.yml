@@ -9,6 +9,7 @@
   available_as:
     - LP
     - CD
+    - Digital
   year: 201301
   image: http://www.looptrooprockers.com/covers/mitt-hjarta-ar-en-bomb.jpeg
   tracks:
@@ -37,6 +38,7 @@
   available_as:
     - LP
     - CD
+    - Digital
   year: 201101
   image: http://www.looptrooprockers.com/covers/professional-dreamers.jpeg
   tracks:
@@ -64,6 +66,7 @@
   available_as:
     - LP
     - CD
+    - Digital
   year: 200801
   image: http://www.looptrooprockers.com/covers/good-things.jpeg
   tracks:
@@ -642,6 +645,7 @@
   available_as:
     - LP
     - CD
+    - Digital
   year: 201001
   image: http://www.looptrooprockers.com/covers/the-mellow-turning-moment.jpeg
   tracks:
@@ -709,20 +713,6 @@
 
 -
   artist: Embee
-  title: Hela världen ser oss
-  type: Single
-  available_as:
-    - Digital
-  year: 201301
-  image: http://www.looptrooprockers.com/covers/hela-varlden-ser-oss.jpeg
-  tracks:
-    - Hela världen ser oss
-  external_links:
-    spotify: https://open.spotify.com/album/1SgiNA12F4rRcLM53czxxi
-    itunes:
-
--
-  artist: Embee
   title: Machine Park Jogger
   type: EP
   available_as:
@@ -735,8 +725,8 @@
     - Ever Since
     - Gated Community
   external_links:
-    spotify:
-    itunes:
+    spotify: http://open.spotify.com/album/6p4dVLIzyni7tKvmmCzq8L
+    itunes: https://itunes.apple.com/se/album/machine-park-jogger-ep/id721647838
 
 -
   artist: Embee
@@ -824,6 +814,7 @@
   available_as:
    - LP
    - CD
+   - Digital
   year: 200902
   image: http://www.looptrooprockers.com/covers/kraksangen.jpeg
   tracks:
