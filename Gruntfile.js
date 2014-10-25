@@ -19,7 +19,6 @@ module.exports = function(grunt) {
       dist: {
         src: [
           'js/skip-link-focus-fix.js',
-          'js/navigation.js',
           'js/videos.js',
           'js/objsort.js',
           'js/discography.js'

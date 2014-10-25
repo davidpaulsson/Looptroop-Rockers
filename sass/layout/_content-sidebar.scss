@@ -2,6 +2,10 @@
   @include container(1040px);
   padding: gutter() * 4;
   background-color: $color__background-body;
+
+  @include breakpoint(small) {
+    padding: (gutter() * 2) gutter();
+  }
 }
 
 .site-header {

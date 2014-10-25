@@ -2,8 +2,8 @@
 objSort v 1.1
 copyright 2006 Thomas Frank
 
-This program is free software under the terms of the 
-GNU General Public License version 2 as published by the Free 
+This program is free software under the terms of the
+GNU General Public License version 2 as published by the Free
 Software Foundation. It is distributed without any warranty.
 */
 
