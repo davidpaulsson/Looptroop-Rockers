@@ -40,7 +40,6 @@
         <h3>Label inquires</h3>
         <ul>
           <li><a href="mailto:claes@looptrooprockers.com">Claes Uggla</a></li>
-          <li><a href="mailto:jens@looptrooprockers.com">Jens Bengtsson</a></li>
         </ul>
 
         <h3>Tour questions / Management</h3>
