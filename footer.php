@@ -42,9 +42,9 @@
           <li><a href="mailto:claes@looptrooprockers.com">Claes Uggla</a></li>
         </ul>
 
-        <h3>Tour questions / Management</h3>
+        <h3>Tour questions</h3>
         <ul>
-          <li><a href="mailto:perry@looptrooprockers.com">Perry Schumi</a></li>
+          <li><a href="mailto:claesedge@gmail.com">Claes Nordin Tärby</a></li>
         </ul>
       </div>
 
