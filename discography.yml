@@ -4,6 +4,33 @@
 
 -
   artist: Looptroop Rockers
+  title: Naked Swedes
+  type: Album
+  available_as:
+    - LP
+    - CD
+    - Digital
+  year: 201403
+  image: http://www.looptrooprockers.com/covers/naked-swedes.jpeg
+  tracks:
+    - Line Check
+    - Naked Swedes (feat. Deacon & Natti of Cunninlynguists)
+    - Slippin'
+    - Ugly Face
+    - Another Love Song
+    - Tonight You Decide (feat. Seinabo Sey)
+    - Illegal
+    - Sea of Death (feat. Seinabo Sey)
+    - Four Numbers
+    - We Got Guns
+    - Beautiful Mistake
+    - The Machine
+  external_links:
+    spotify: http://open.spotify.com/album/0PzKm3QLRWkMrb1esAlwCJ
+    itunes: https://itunes.apple.com/se/album/naked-swedes/id924931672?l=en
+
+-
+  artist: Looptroop Rockers
   title: Mitt hjärta är en bomb
   type: Album
   available_as:
