@@ -44,7 +44,7 @@
 
         <h3>Tour questions</h3>
         <ul>
-          <li><a href="mailto:claesedge@gmail.com">Claes Nordin Tärby</a></li>
+          <li><a href="mailto:claes@newdirection.nu">Claes Nordin Tärby</a></li>
         </ul>
       </div>
 
