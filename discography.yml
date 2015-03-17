@@ -145,6 +145,21 @@
     itunes: https://itunes.apple.com/se/album/fort-europa/id678224867?l=en
 
 -
+  artist: Looptroop Rockers
+  title: Halos
+  type: Single
+  available_as:
+    - Digital
+    - 7"
+  year: 201501
+  image: http://www.looptrooprockers.com/wp-content/themes/looptroop-rockers-v5/img/discography/halos.jpeg
+  tracks:
+    - Halos
+  external_links:
+    spotify: http://open.spotify.com/track/7sPuzk5Zl0nY9yBCGBCGgz
+    itunes: https://itunes.apple.com/se/album/halos-single/id965222753
+
+-
   artist: Looptroop
   title: Fort Europa
   type: Single
