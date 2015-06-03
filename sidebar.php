@@ -10,8 +10,7 @@
   <div class="widget-area__yt">
     <?php
     error_reporting(E_ALL);
-    $feedURL = 'http://gdata.youtube.com/feeds/api/users/LooptroopRockersVEVO/uploads?max-results=16';
-    // $feedURL = 'http://gdata.youtube.com/feeds/api/users/funkyloffe/uploads?max-results=16';
+    $feedURL = 'https://www.youtube.com/feeds/videos.xml?user=LooptroopRockersVEVO';
     $sxml = simplexml_load_file($feedURL);
     $i=0;
     $len = count($sxml->entry);
@@ -19,11 +18,11 @@
     foreach ($sxml->entry as $entry) {
 
       $media = $entry->children('media', true);
-      $watch = (string)$media->group->player->attributes()->url;
+      $watch = (string)$media->group->content->attributes()->url;
       $thumbnail = (string)$media->group->thumbnail[0]->attributes()->url;
 
       if ($i==0) {
-        echo apply_filters('the_content', str_replace(array('<p>','</p>'), '', $watch));
+        echo apply_filters('the_content', '<iframe width="390" height="219" src="' . $watch . '" frameborder="0" allowfullscreen ></iframe>');
       }
       ?>
 
@@ -40,20 +39,24 @@
         if ($i < 16) {
           error_reporting(E_ALL);
           $videosLeft = 16 - $i;
-          $feedURL = 'http://gdata.youtube.com/feeds/api/users/dvsgee/uploads?max-results=' . $videosLeft;
+          $feedURL = 'https://www.youtube.com/feeds/videos.xml?user=dvsgee';
           $sxml = simplexml_load_file($feedURL);
 
           foreach ($sxml->entry as $entry) {
             $media = $entry->children('media', true);
-            $watch = (string)$media->group->player->attributes()->url;
+            $watch = (string)$media->group->content->attributes()->url;
             $thumbnail = (string)$media->group->thumbnail[0]->attributes()->url;
-            ?>
 
-              <div class="videoitem">
-                <div class="videothumb"><a href="<?php echo $watch; ?>" class="watchvideo"><img src="<?php echo $thumbnail;?>" alt="<?php echo $media->group->title; ?>" /></a></div>
-              </div>
+            if ($i < 16) {
+              ?>
 
-            <?php
+                <div class="videoitem">
+                  <div class="videothumb"><a href="<?php echo $watch; ?>" class="watchvideo"><img src="<?php echo $thumbnail;?>" alt="<?php echo $media->group->title; ?>" /></a></div>
+                </div>
+
+              <?php
+              }
+            $i++;
           }
         }
       }

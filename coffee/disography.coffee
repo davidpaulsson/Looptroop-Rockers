@@ -1,16 +1,19 @@
 ###
 # discography.js
-#
 # Manages the discography section.
 ###
 
 (($) ->
 
-  ### Only run this script in discography page ###
+  ###
+  # Only run this script in discography page
+  ###
   if $("#discography").length
 
-    ### Assign handlers immediately after making the request,
-    and remember the jqxhr object for this request ###
+    ###
+    # Assign handlers immediately after making the request,
+    # and remember the jqxhr object for this request
+    ###
     jqxhr = $.getJSON("/wp-content/themes/looptroop-rockers-v5/js/discography.json", ->
       $("#discography").append """
         <p class="loading">Loading discography…</p>
@@ -34,20 +37,26 @@
   listDiscography = (data) ->
 
     ###
-     * Sort obj array
-     * http://www.thomasfrank.se/sorting_things.html
+    # Sort obj array
+    # http://www.thomasfrank.se/sorting_things.html
     ###
     data.objSort "year", -1
 
     for item in data
 
-      ### Fix tracks ###
+      ###
+      # Fix tracks
+      ###
       tracks = item.tracks.join("<li class='album__track'>")
 
-      ### Fix available as ###
+      ###
+      # Fix available as
+      ###
       formats = item.available_as.join("/")
 
-      ### Generate download/listen buttons ###
+      ###
+      # Generate download/listen buttons
+      ###
       if item.external_links.itunes isnt null
         itunesBtn = """ <a href="#{item.external_links.itunes}" target="_blank">Download on iTunes</a><br> """
       else
@@ -57,10 +66,14 @@
       else
         spotifyBtn = ""
 
-      ### Display year as 4 digits ###
+      ###
+      # Display year as 4 digits
+      ###
       year = item.year.toString().slice 0, -2 unless item.year is null or undefined
 
-      ### Print album ###
+      ###
+      # Print album
+      ###
       $("#discography").append """
         <div class="album">
           <img class="album__cover" width="261" height="261" src="#{item.image}" alt="#{item.title} by #{item.artist}">
