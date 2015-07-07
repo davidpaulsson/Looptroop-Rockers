@@ -822,6 +822,21 @@
 
 -
   artist: Promoe
+  title: Sverigefiende (Fest mot Våldsgrupp)
+  type: Single
+  available_as:
+   - Digital
+  year: 201501
+  image: /wp-content/themes/looptroop-rockers-v5/img/discography/sverigefiende.jpeg
+  tracks:
+    - Sverigefiende (Fest mot Våldsgrupp)
+    - Farbror Brun (ACAB jajamensan)
+  external_links:
+    spotify: https://open.spotify.com/album/1jFdSfYFWx0qE3OsZ4iPjG
+    itunes:
+
+-
+  artist: Promoe
   title: Bondfångeri
   type: Album
   available_as:
