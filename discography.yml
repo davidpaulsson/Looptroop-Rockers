@@ -20,7 +20,7 @@
     - Another Love Song
     - Tonight You Decide (feat. Seinabo Sey)
     - Illegal
-    - Sea of Death (feat. Seinabo Sey)
+    - Sea of Death (feat. Sabina Ddumba)
     - Four Numbers
     - We Got Guns
     - Beautiful Mistake
@@ -819,6 +819,66 @@
 #
 # PROMOE
 #
+
+-
+  artist: Promoe
+  title: Fult folk
+  type: Album
+  available_as:
+   - Digital
+   - LP
+  year: 201602
+  image: /wp-content/themes/looptroop-rockers-v5/img/discography/fult-folk--album.jpeg
+  tracks:
+   - Där Allting Startade Feat. Ayla Shatz
+   - Skolmat (feat. Ayla Shatz)
+   - Icke-Akademisk Kvart
+   - Fult Folk
+   - PGA-proffs (feat. Rosh)
+   - Gåshud
+   - Teleportera Dig Hit
+   - Dygnet
+   - Legender (feat. Parham)
+   - Hoppa
+   - Flightmode
+   - Vale
+   - Vegandiktaturen
+   - Överjordiska
+   - En Hyllning (feat. Aleks)
+   - Till En Vän
+  external_links:
+    spotify: https://open.spotify.com/album/4lFgiEyJQhhMnTA6CzsvZk
+    itunes: https://itunes.apple.com/se/album/fult-folk/id1084060255?l=en
+
+
+-
+  artist: Promoe
+  title: Fult folk
+  type: Single
+  available_as:
+   - Digital
+  year: 201601
+  image: /wp-content/themes/looptroop-rockers-v5/img/discography/fult-folk--single.jpeg
+  tracks:
+    - Fult Folk (feat. Hurula)
+  external_links:
+    spotify: https://open.spotify.com/album/71THJJJcIyrTRE9LdZ2Q0E
+    itunes: https://itunes.apple.com/se/album/fult-folk-feat.-hurula-single/id1083519001?l=en
+
+-
+  artist: Promoe
+  title: Farbror Brun (ACAB jajamensan)
+  type: Single
+  available_as:
+   - Digital
+  year: 201503
+  image: /wp-content/themes/looptroop-rockers-v5/img/discography/farbrorbrun.jpeg
+  tracks:
+    - Farbror Brun (ACAB jajamensan)
+    - Sverigefiende (Fest mot Våldsgrupp)
+  external_links:
+    spotify: https://open.spotify.com/album/0evnKhNUwdk2y6kSFXBHyS
+    itunes:
 
 -
   artist: Promoe
