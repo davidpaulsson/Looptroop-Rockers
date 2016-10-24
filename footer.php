@@ -24,7 +24,8 @@
         <h3>Bookings</h3>
         <ul>
           <li>
-            <a href="mailto:ola@luger.se">Ola Broquist</a><br>
+            <strong>Ola Broquist</strong><br>
+            ola (a) luger . se<br>
             <a href="http://www.luger.se">www.luger.se</a><br>
             +46 (0) 8-578 679 00
           </li>
@@ -34,17 +35,26 @@
       <div class="site-footer__press">
         <h3>Press</h3>
         <ul>
-          <li><a href="mailto:amir.sela@sonymusic.com">Amir Sela</a></li>
+          <li>
+            <strong>Amir Sela</strong><br>
+            amir (a) looptrooprockers . com
+          </li>
         </ul>
 
         <h3>Label inquires</h3>
         <ul>
-          <li><a href="mailto:claes@looptrooprockers.com">Claes Uggla</a></li>
+          <li>
+            <strong>Claes Uggla</strong><br>
+            claes (a) looptrooprockers . com
+          </li>
         </ul>
 
         <h3>Tour questions</h3>
         <ul>
-          <li><a href="mailto:claes@newdirection.nu">Claes Nordin Tärby</a></li>
+          <li>
+            <strong>Claes Nordin Tärby</strong><br>
+            claes (a) newdirection . nu
+          </li>
         </ul>
       </div>
 
