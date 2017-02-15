@@ -19,15 +19,18 @@
 
       $media = $entry->children('media', true);
       $watch = (string)$media->group->content->attributes()->url;
+      $watch2 = str_replace('/v/', '/embed/', $watch);
+      $watch3 = str_replace('?version=3', '', $watch2);
+
       $thumbnail = (string)$media->group->thumbnail[0]->attributes()->url;
 
       if ($i==0) {
-        echo apply_filters('the_content', '<iframe width="390" height="219" src="' . $watch . '" frameborder="0" allowfullscreen ></iframe>');
+        echo apply_filters('the_content', '<iframe width="390" height="219" src="' . $watch3 . '" frameborder="0" allowfullscreen ></iframe>');
       }
       ?>
 
         <div class="videoitem<?php if ($i==0) { ?> active<?php } ?>">
-          <div class="videothumb"><a href="<?php echo $watch; ?>" class="watchvideo"><img src="<?php echo $thumbnail;?>" alt="<?php echo $media->group->title; ?>" /></a></div>
+          <div class="videothumb"><a href="<?php echo $watch3; ?>" class="watchvideo"><img src="<?php echo $thumbnail;?>" alt="<?php echo $media->group->title; ?>" /></a></div>
         </div>
 
       <?php
@@ -45,13 +48,16 @@
           foreach ($sxml->entry as $entry) {
             $media = $entry->children('media', true);
             $watch = (string)$media->group->content->attributes()->url;
+            $watch2 = str_replace('/v/', '/embed/', $watch);
+            $watch3 = str_replace('?version=3', '', $watch2);
+
             $thumbnail = (string)$media->group->thumbnail[0]->attributes()->url;
 
             if ($i < 16) {
               ?>
 
                 <div class="videoitem">
-                  <div class="videothumb"><a href="<?php echo $watch; ?>" class="watchvideo"><img src="<?php echo $thumbnail;?>" alt="<?php echo $media->group->title; ?>" /></a></div>
+                  <div class="videothumb"><a href="<?php echo $watch3; ?>" class="watchvideo"><img src="<?php echo $thumbnail;?>" alt="<?php echo $media->group->title; ?>" /></a></div>
                 </div>
 
               <?php
