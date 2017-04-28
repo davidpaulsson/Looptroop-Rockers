@@ -24,6 +24,14 @@ $breakpoints: (
   'huge': (min-width: 1200px),
 );
 
+@mixin clearfix {
+  &:after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+}
+
 // responsive breakpoint manager
 @mixin mq($breakpoint) {
   $raw-query: map-get($breakpoints, $breakpoint);
@@ -147,44 +155,30 @@ html.ltr25 {
   .header {
     position: fixed;
     z-index: 1;
-    display: flex;
-    align-items: center;
     width: 100%;
-    padding: $spacing;
+    height: 85px;
     animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation-delay: 2400ms;
     border-bottom: 1px solid rgba(0, 0, 0, 0.25);
     background-color: #fff;
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.25);
-    @include mq('medium') {
-      height: 100px;
-    }
-    .wrapper {
-      display: flex;
-      flex: 1;
-      justify-content: space-between;
-      align-items: center;
-      @include mq('medium') {
-        @include container;
-      }
+    &__container {
+      @include container;
     }
   }
   .logo {
-    position: relative;
-    flex: 1;
+    padding-top: 20px;
+    padding-left: (gutter() * 2);
+    @include span(4 of 12);
     @include mq('medium') {
-      @include span(4 of 12);
-      &:before {
-        position: absolute;
-        bottom: -9.75px;
-        left: 62px;
-        display: block;
-        width: 40px;
-        height: 40px;
-        content: '';
-        transform: rotate(45deg);
-        border-radius: 14px;
-        background-color: #fff;
+      padding-left: gutter();
+    }
+    img {
+      width: auto;
+      height: 40px;
+      @include mq('medium') {
+        width: 165px;
+        height: auto;
       }
     }
     svg {
@@ -199,19 +193,23 @@ html.ltr25 {
     }
   }
   .nav {
-    @include mq('medium') {
-      @include span(last 8 of 12);
-    }
+    padding-top: 30px;
+    padding-right: (gutter() * 2);
+    text-align: right;
+    @include span(last 8 of 12);
     &__header {
       display: flex;
       align-items: center;
-      padding-bottom: $spacing;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+      height: 85px;
+      padding-right: (gutter() * 2);
+      padding-left: (gutter() * 2);
       @include mq('medium') {
         display: none;
       }
       .logo {
         flex: 1;
+        padding: 0;
+        text-align: left;
         svg {
           width: 68px;
           height: 40px;
@@ -225,7 +223,6 @@ html.ltr25 {
       left: 0;
       width: 100vw;
       height: 100vh;
-      padding: $spacing;
       transition: transform 0.3s;
       transform: translateX(100%);
       background-color: #333;
@@ -246,51 +243,40 @@ html.ltr25 {
         display: none;
       }
     }
-    &__close {
-      @include mq('medium') {
-        display: none;
-      }
-    }
     ul {
+      text-align: left;
       @include mq('medium') {
-        flex: 1;
+        margin-left: gutter();
       }
     }
     li {
       font-weight: 400;
-      padding: $spacing 0;
+      padding: (gutter() * 2);
+      text-transform: uppercase;
       border-bottom: 1px solid rgba(0, 0, 0, 0.25);
       @include mq('medium') {
         font-size: 14px;
-        line-height: 2;
         display: inline-block;
-        margin: 0 $spacing;
+        margin-right: gutter();
         padding: 0;
-        text-transform: uppercase;
         border-bottom: 0;
-        &:first-child {
-          margin-left: 0;
-        }
         &:last-child {
           float: right;
           margin-right: 0;
-        }
-      }
-      &:last-child {
-        svg {
-          width: auto;
-          height: 10px;
-          margin-left: 6px;
+          svg {
+            width: 10px;
+            height: 10px;
+            margin-left: 6px;
+          }
         }
       }
       a {
         text-decoration: none;
         color: #fff;
         @include mq('medium') {
+          text-decoration: none;
           color: $text-dark;
-          &:hover {
-            text-decoration: underline;
-          }
+          border-bottom: 0;
         }
       }
     }
@@ -386,7 +372,7 @@ html.ltr25 {
     animation: fade-in 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation-delay: 2400ms;
     @include mq('medium') {
-      padding: ($spacing * 4) 0;
+      padding: ($spacing * 4) $spacing;
       @include container;
       .intro {
         font-size: 14px;
@@ -411,16 +397,11 @@ html.ltr25 {
   //  releases
   //--------------------------------------------------------------
   .releases {
-    // background-size: cover;
     overflow: hidden;
     padding: ($spacing * 2) $spacing;
     background-color: #eee;
     background-image: url('/wp-content/themes/looptroop-rockers-v5/img/ltr25/concrete_seamless.png');
     @include mq('medium') {
-      padding: ($spacing * 4) 0;
-      header {
-        @include container;
-      }
       .intro {
         font-size: 14px;
         @include span(4 of 12);
@@ -433,11 +414,15 @@ html.ltr25 {
         color: $text-dark;
       }
     }
-    .releases-list {
-      overflow: hidden;
+    .inner {
+      @include container;
       @include mq('medium') {
-        @include container;
+        padding: ($spacing * 4) $spacing;
       }
+    }
+    .releases-list {
+      @include clearfix;
+      @include span(last 12 of 12);
     }
   }
   .release {
@@ -494,7 +479,7 @@ html.ltr25 {
   .press {
     padding: ($spacing * 2) $spacing;
     @include mq('medium') {
-      padding: ($spacing * 4) 0;
+      padding: ($spacing * 4) $spacing;
       @include container;
       .intro {
         font-size: 14px;
@@ -553,7 +538,7 @@ html.ltr25 {
     background-image: url('/wp-content/themes/looptroop-rockers-v5/img/ltr25/texture_footer.jpg');
     background-size: cover;
     @include mq('medium') {
-      padding: ($spacing * 4) 0;
+      padding: ($spacing * 4) $spacing;
       .footer-wrap {
         @include container;
       }

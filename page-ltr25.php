@@ -14,19 +14,19 @@
         <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'ltr' ); ?></a>
 
         <header id="masthead" class="header" role="banner">
-            <div class="wrapper">
+            <div class="header__container">
                 <a href="/ltr25" class="logo">
                     <h1 class="screen-reader-text">Looptroop Rockers 25 years</h1>
-
-                    <svg viewBox="0 0 283.5 170.1">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/logo_ltr_solid.svg" alt="LTR">
+                    <!-- <svg viewBox="0 0 283.5 170.1">
                         <use xlink:href="#logo"></use>
-                    </svg>
+                    </svg> -->
                 </a>
 
                 <nav role="navigation" class="nav">
                     <a class="nav__open" href="javascript:;">
                         <span class="screen-reader-text">Open Navigation</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22" viewBox="0 0 28 22" version="1.1"><title>Icon Nav</title><desc>Created with Sketch.</desc><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-327.000000, -29.000000)" fill="#2A2A2A"><g transform="translate(327.000000, 29.000000)"><path d="M0 0L28 0 28 2 0 2 0 0ZM0 10L28 10 28 12 0 12 0 10ZM0 20L28 20 28 22 0 22 0 20Z"/></g></g></g></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22" viewBox="0 0 28 22" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-327.000000, -29.000000)" fill="#2A2A2A"><g transform="translate(327.000000, 29.000000)"><path d="M0 0L28 0 28 2 0 2 0 0ZM0 10L28 10 28 12 0 12 0 10ZM0 20L28 20 28 22 0 22 0 20Z"/></g></g></g></svg>
                     </a>
                     <section class="nav__wrapper">
                         <header class="nav__header">
@@ -98,57 +98,59 @@
 
             <span class="goto" id="releases"></span>
             <section class="releases">
-                <header>
-                    <div class="intro">
-                        Releases
-                        <div>Weekly</div>
-                    </div>
-                    <div class="content-right">
-                        <h1>Check back every friday for a brand new release!</h1>
-                        <h2>Next release on May 5, 2017</h2>
-                    </div>
-                </header>
+                <div class="inner">
+                    <header>
+                        <div class="intro">
+                            Releases
+                            <div>Weekly</div>
+                        </div>
+                        <div class="content-right">
+                            <h1>Check back every friday for a brand new release!</h1>
+                            <h2>Next release on May 5, 2017</h2>
+                        </div>
+                    </header>
 
-                <div class="releases-list">
-                    <div class="release release--unreleased">
-                        <div class="release__img">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/01_LTR25_NextReleaseMAY5.jpg" alt="Available May 5">
+                    <div class="releases-list">
+                        <div class="release release--unreleased">
+                            <div class="release__img">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/01_LTR25_NextReleaseMAY5.jpg" alt="Available May 5">
+                            </div>
+                            <div class="release__col1">
+                                <div class="release__artist">Artist</div>
+                                <div class="release__title">Release name</div>
+                                <div class="release__link"><del>Listen to single</del></div>
+                            </div>
+                            <div class="release__col2">
+                                <div class="release__id">DVSGXXX</div>
+                                <div class="release__date">May 5, 2017</div>
+                                <a href="" class="release__ext-link">
+                                    <svg viewBox="0 0 64 64">
+                                        <use xlink:href="#linkfire"></use>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
-                        <div class="release__col1">
-                            <div class="release__artist">Artist</div>
-                            <div class="release__title">Release name</div>
-                            <div class="release__link"><del>Listen to single</del></div>
-                        </div>
-                        <div class="release__col2">
-                            <div class="release__id">DVSGXXX</div>
-                            <div class="release__date">May 5, 2017</div>
-                            <a href="" class="release__ext-link">
-                                <svg viewBox="0 0 64 64">
-                                    <use xlink:href="#linkfire"></use>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
 
-                    <div class="release">
-                        <div class="release__img">
-                            <a href="https://ltr25.lnk.to/CityCamo">
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/_LTR25_CityCamoDVSG080.jpg" alt="City Camo">
-                            </a>
-                        </div>
-                        <div class="release__col1">
-                            <div class="release__artist">Looptroop Rockers</div>
-                            <div class="release__title">City Camo</div>
-                            <a href="https://ltr25.lnk.to/CityCamo" class="release__link">Listen to single</a>
-                        </div>
-                        <div class="release__col2">
-                            <div class="release__id">DVSG080</div>
-                            <div class="release__date">April 28, 2017</div>
-                            <a href="https://ltr25.lnk.to/CityCamo" class="release__ext-link">
-                                <svg viewBox="0 0 64 64">
-                                    <use xlink:href="#linkfire"></use>
-                                </svg>
-                            </a>
+                        <div class="release">
+                            <div class="release__img">
+                                <a href="https://ltr25.lnk.to/CityCamo">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/_LTR25_CityCamoDVSG080.jpg" alt="City Camo">
+                                </a>
+                            </div>
+                            <div class="release__col1">
+                                <div class="release__artist">Looptroop Rockers</div>
+                                <div class="release__title">City Camo</div>
+                                <a href="https://ltr25.lnk.to/CityCamo" class="release__link">Listen to single</a>
+                            </div>
+                            <div class="release__col2">
+                                <div class="release__id">DVSG080</div>
+                                <div class="release__date">April 28, 2017</div>
+                                <a href="https://ltr25.lnk.to/CityCamo" class="release__ext-link">
+                                    <svg viewBox="0 0 64 64">
+                                        <use xlink:href="#linkfire"></use>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
