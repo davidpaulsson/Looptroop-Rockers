@@ -111,9 +111,14 @@ add_action( 'widgets_init', 'ltr_widgets_init' );
  * Enqueue scripts and styles.
  */
 function ltr_scripts() {
-	wp_enqueue_style( 'ltr-font', '//fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,300italic,600italic' );
-	wp_enqueue_style( 'ltr-style', get_stylesheet_uri() );
-	wp_enqueue_script( 'ltr-scripts', get_template_directory_uri() . '/js/looptroop-rockers.js', array('jquery'), '20120206', true );
+	if ( is_page('ltr25') ) {
+		wp_enqueue_style( 'ltr25-font', '//fonts.googleapis.com/css?family=Rubik:300,400' );
+		wp_enqueue_style( 'ltr25-style', get_template_directory_uri() . '/ltr25.css' );
+	} else {
+		wp_enqueue_style( 'ltr-font', '//fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,300italic,600italic' );
+		wp_enqueue_style( 'ltr-style', get_stylesheet_uri() );
+		wp_enqueue_script( 'ltr-scripts', get_template_directory_uri() . '/js/looptroop-rockers.js', array('jquery'), '20120206', true );
+	}
 }
 add_action( 'wp_enqueue_scripts', 'ltr_scripts' );
 

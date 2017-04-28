@@ -1,6 +1,5 @@
 /*global module:false*/
 module.exports = function(grunt) {
-
   // Project configuration.
   grunt.initConfig({
     // Metadata.
@@ -44,7 +43,7 @@ module.exports = function(grunt) {
       },
       gruntfile: {
         src: 'Gruntfile.js'
-      },
+      }
     },
     sass: {
       dist: {
@@ -53,14 +52,18 @@ module.exports = function(grunt) {
           require: 'susy'
         },
         files: {
-          'style.css': 'sass/style.scss'
+          'style.css': 'sass/style.scss',
+          'ltr25.css': 'sass/ltr25.scss'
         }
       }
     },
     autoprefixer: {
+      ltr25: {
+        src: 'ltr25.css'
+      },
       dist: {
         src: 'style.css'
-      },
+      }
     },
     coffee: {
       dist: {
@@ -92,52 +95,33 @@ module.exports = function(grunt) {
             dest: 'js/discography.json'
           }
         ]
-      },
+      }
     },
     watch: {
       gruntfile: {
         files: '<%= jshint.gruntfile.src %>',
-        tasks: [
-          'jshint:gruntfile'
-        ]
+        tasks: ['jshint:gruntfile']
       },
       coffee: {
-        files: [
-          'coffee/**/*.coffee'
-        ],
-        tasks: [
-          'coffee',
-          'jshint',
-          'concat'
-        ],
+        files: ['coffee/**/*.coffee'],
+        tasks: ['coffee', 'jshint', 'concat']
       },
       js: {
-        files: [
-          'js/*.js',
-          '!js/looptroop-rockers.js'
-        ],
-        tasks: [
-          'jshint',
-          'concat'
-        ],
+        files: ['js/*.js', '!js/looptroop-rockers.js'],
+        tasks: ['jshint', 'concat'],
         options: {
-          livereload: true,
+          livereload: true
         }
       },
       yaml: {
         files: '*.yml',
-        tasks: [
-          'yaml'
-        ],
+        tasks: ['yaml']
       },
       sass: {
         files: 'sass/**/*.scss',
-        tasks: [
-          'sass',
-          'autoprefixer'
-        ],
+        tasks: ['sass', 'autoprefixer'],
         options: {
-          livereload: true,
+          livereload: true
         }
       }
     }
@@ -154,5 +138,4 @@ module.exports = function(grunt) {
 
   // Default task.
   grunt.registerTask('default', ['jshint', 'concat']);
-
 };

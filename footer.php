@@ -36,16 +36,8 @@
         <h3>Press</h3>
         <ul>
           <li>
-            <strong>Amir Sela</strong><br>
-            amir (a) looptrooprockers . com
-          </li>
-        </ul>
-
-        <h3>Label inquires</h3>
-        <ul>
-          <li>
-            <strong>Claes Uggla</strong><br>
-            claes (a) looptrooprockers . com
+            <strong>SKIVA Promotion</strong><br>
+            christian (a) skiva . se
           </li>
         </ul>
 
