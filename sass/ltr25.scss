@@ -89,10 +89,6 @@ body {
   display: block;
   margin-top: -85px;
   padding-bottom: 85px;
-  @include mq('medium') {
-    margin-top: -100px;
-    padding-bottom: 100px;
-  }
 }
 
 html.ltr25 {
@@ -357,7 +353,6 @@ html.ltr25 {
         width: 120px;
         height: 120px;
         @include mq('medium') {
-          left: 0;
           width: 275px;
           height: 275px;
         }
@@ -417,7 +412,7 @@ html.ltr25 {
     .inner {
       @include container;
       @include mq('medium') {
-        padding: ($spacing * 4) $spacing;
+        padding: ($spacing * 2) $spacing;
       }
     }
     .releases-list {

@@ -15,12 +15,9 @@
 
         <header id="masthead" class="header" role="banner">
             <div class="header__container">
-                <a href="/ltr25" class="logo">
+                <a href="#" class="logo">
                     <h1 class="screen-reader-text">Looptroop Rockers 25 years</h1>
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/logo_ltr_solid.svg" alt="LTR">
-                    <!-- <svg viewBox="0 0 283.5 170.1">
-                        <use xlink:href="#logo"></use>
-                    </svg> -->
                 </a>
 
                 <nav role="navigation" class="nav">
@@ -47,7 +44,7 @@
                             <li><a href="#releases">Releases</a></li>
                             <li><a href="#press">Press</a></li>
                             <li>
-                                <a href="http://www.looptrooprockers.com/">Visit main site</a>
+                                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Visit main site</a>
                                 <svg viewBox="0 0 6 10">
                                     <use xlink:href="#arrow"></use>
                                 </svg>
@@ -160,13 +157,13 @@
             <section class="press">
                 <aside class="intro">
                     Press
-                    <div>Photos & bio</div>
+                    <div>Photos, logos & bio</div>
                 </aside>
                 <div class="content-right">
 
                     <header>
 
-                        <h1>Photos, bio and press-kit</h1>
+                        <h1>Photos, logos, bio and press-kit</h1>
                         <h2>Photos by <a href="https://www.facebook.com/ErikbyErikPhotography/">Erik by Erik</a></h2>
                     </header>
 
@@ -214,6 +211,19 @@
                     </section>
 
                     <section class="press-section">
+                        <h1>Logo</h1>
+                        <div class="press-item">
+                            <div class="press-item__photo">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/ltr25logo-preview.png" alt="Download LTR 25 logo">
+                            </div>
+                            <div class="press-item__desc">
+                                <a href="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/press/LTR25logo.eps"><strong>Download LTR 25 logo</strong></a>
+                                1.9 MB (.EPS)
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="press-section">
                         <h1>Bio</h1>
                         <div class="press-item">
                             <div class="press-item__desc">
@@ -241,8 +251,8 @@
                         <h1>All</h1>
                         <div class="press-item">
                             <div class="press-item__desc">
-                                <a href="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/press/ltr25.zip"><strong>Download press-kit (photos + bio)</strong></a>
-                                108 MB (.ZIP)
+                                <a href="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/press/ltr25.zip"><strong>Download press-kit (photos + logo + bio)</strong></a>
+                                73.9 MB (.ZIP)
                             </div>
                         </div>
                     </section>
