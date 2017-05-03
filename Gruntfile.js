@@ -138,4 +138,7 @@ module.exports = function(grunt) {
 
   // Default task.
   grunt.registerTask('default', ['jshint', 'concat']);
+
+  // Build all
+  grunt.registerTask('build', ['coffee', 'jshint', 'concat', 'sass', 'autoprefixer', 'yaml']);
 };
