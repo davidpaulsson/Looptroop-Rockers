@@ -106,6 +106,7 @@ html.ltr25 {
     &.nav--open {
       position: fixed;
       overflow: hidden;
+      position: sticky;
       .nav {
         .nav__wrapper {
           transform: translateX(0);
