@@ -1101,6 +1101,26 @@
 
 -
   artist: Casual Brothers
+  title: Grey
+  type: EP
+  available_as:
+    - Digital
+    - 12"
+  year: 201603
+  image: /wp-content/themes/looptroop-rockers-v5/img/discography/cb-grey.jpg
+  tracks:
+    - One
+    - Change
+    - Guarantees (feat. Ayla Shatz)
+    - Selectah
+    - Mind
+    - Melange (feat. Ayla Shatz)
+  external_links:
+    spotify: https://open.spotify.com/album/0Zg83MoAxOUFzmmv1lovWT
+    itunes: https://itunes.apple.com/se/album/grey-ep/id1172217225
+
+-
+  artist: Casual Brothers
   title: Customer's Choice EP
   type: EP
   available_as:
