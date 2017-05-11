@@ -186,7 +186,7 @@
                     <header>
 
                         <h1>Photos, logos, bio and press-kit</h1>
-                        <h2>Photos by <a href="https://www.facebook.com/ErikbyErikPhotography/">Erik by Erik</a></h2>
+                        <h2>Photos by <a href="https://www.facebook.com/ErikbyErikPhotography/">Erik by Erik</a> & <a href="https://www.brunobaptista.com/">Bruno Baptista</a></h2>
                     </header>
 
                     <section class="press-section">
@@ -228,6 +228,46 @@
                             <div class="press-item__desc">
                                 <a href="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/press/LTR25_2.tif"><strong>Download LTR (Hi res)</strong></a>
                                 67.5 MB (.TIFF)
+                            </div>
+                        </div>
+
+                        <div class="press-item">
+                            <div class="press-item__photo">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/press-montage-preview.jpg" alt="Download LTR Montage (Hi res)">
+                            </div>
+                            <div class="press-item__desc">
+                                <a href="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/press/LTR_Montage_LoRes.jpg"><strong>Download LTR Montage (Low res)</strong></a>
+                                5.1 MB (.JPG)
+                            </div>
+                        </div>
+
+                        <div class="press-item">
+                            <div class="press-item__photo">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/press-montage-preview.jpg" alt="Download LTR Montage (Hi res)">
+                            </div>
+                            <div class="press-item__desc">
+                                <a href="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/press/LTR_Montage.jpg"><strong>Download LTR Montage (Hi res)</strong></a>
+                                20.6 MB (.JPG)
+                            </div>
+                        </div>
+
+                        <div class="press-item">
+                            <div class="press-item__photo">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/press-montage-2-preview.jpg" alt="Download LTR Montage (Hi res)">
+                            </div>
+                            <div class="press-item__desc">
+                                <a href="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/press/LTR_Montage_2_LoRes.jpg"><strong>Download LTR Montage (Low res)</strong></a>
+                                5.7 MB (.JPG)
+                            </div>
+                        </div>
+
+                        <div class="press-item">
+                            <div class="press-item__photo">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/press-montage-2-preview.jpg" alt="Download LTR Montage (Hi res)">
+                            </div>
+                            <div class="press-item__desc">
+                                <a href="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/press/LTR_Montage_2.jpg"><strong>Download LTR Montage (Hi res)</strong></a>
+                                26.9 MB (.JPG)
                             </div>
                         </div>
                     </section>
@@ -274,7 +314,7 @@
                         <div class="press-item">
                             <div class="press-item__desc">
                                 <a href="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/press/ltr25.zip"><strong>Download press-kit (photos + logo + bio)</strong></a>
-                                73.9 MB (.ZIP)
+                                165.2 MB (.ZIP)
                             </div>
                         </div>
                     </section>
