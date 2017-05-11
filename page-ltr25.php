@@ -103,14 +103,14 @@
                         </div>
                         <div class="content-right">
                             <h1>Check back every friday for a brand new release!</h1>
-                            <h2>Next release on May 5, 2017</h2>
+                            <h2>Next release on May 12, 2017</h2>
                         </div>
                     </header>
 
                     <div class="releases-list">
                         <div class="release release--unreleased">
                             <div class="release__img">
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/01_LTR25_NextReleaseMAY5.jpg" alt="Available May 5">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/02_LTR25_NextReleaseMAY12.jpg" alt="Available May 12">
                             </div>
                             <div class="release__col1">
                                 <div class="release__artist">Artist</div>
@@ -119,7 +119,7 @@
                             </div>
                             <div class="release__col2">
                                 <div class="release__id">DVSGXXX</div>
-                                <div class="release__date">May 5, 2017</div>
+                                <div class="release__date">May 12, 2017</div>
                                 <a href="" class="release__ext-link">
                                     <svg viewBox="0 0 64 64">
                                         <use xlink:href="#linkfire"></use>
@@ -130,8 +130,30 @@
 
                         <div class="release">
                             <div class="release__img">
+                                <a href="https://ltr25.lnk.to/TheAir">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/_LTR25_TheAirDVSG081.jpg" alt="Embee &amp; Ayla Shatz - The Air">
+                                </a>
+                            </div>
+                            <div class="release__col1">
+                                <div class="release__artist">Embee &amp; Ayla Shatz</div>
+                                <div class="release__title">The Air</div>
+                                <a href="https://ltr25.lnk.to/TheAir" class="release__link">Listen to single</a>
+                            </div>
+                            <div class="release__col2">
+                                <div class="release__id">DVSG081</div>
+                                <div class="release__date">May 5, 2017</div>
+                                <a href="https://ltr25.lnk.to/TheAir" class="release__ext-link">
+                                    <svg viewBox="0 0 64 64">
+                                        <use xlink:href="#linkfire"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="release">
+                            <div class="release__img">
                                 <a href="https://ltr25.lnk.to/CityCamo">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/_LTR25_CityCamoDVSG080.jpg" alt="City Camo">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/_LTR25_CityCamoDVSG080.jpg" alt="Looptroop Rockers - City Camo">
                                 </a>
                             </div>
                             <div class="release__col1">

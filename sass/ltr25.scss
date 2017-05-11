@@ -259,7 +259,7 @@ html.ltr25 {
         border-bottom: 0;
         &:last-child {
           float: right;
-          margin-right: 0;
+          margin-right: -(gutter());
           svg {
             width: 10px;
             height: 10px;
@@ -418,14 +418,14 @@ html.ltr25 {
     }
     .releases-list {
       @include clearfix;
-      @include span(last 12 of 12);
+      @include container;
     }
   }
   .release {
     overflow: hidden;
     margin-top: ($spacing * 2);
     @include mq('medium') {
-      @include span(4 of 12);
+      @include gallery(4 of 12);
     }
     &__img {
       margin-bottom: $spacing;
