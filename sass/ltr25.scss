@@ -438,7 +438,7 @@ html.ltr25 {
     &__col1 {
       margin-right: $spacing;
       color: $text-dark;
-      @include span(2 of 4);
+      @include span(5 of 9);
       a {
         color: $text-dark;
         &:hover {
@@ -448,7 +448,7 @@ html.ltr25 {
     }
     &__col2 {
       text-transform: uppercase;
-      @include span(2 of 4);
+      @include span(4 of 9);
       @include last();
     }
     &__ext-link {
