@@ -153,11 +153,11 @@
                         <div class="release">
                             <div class="release__img">
                                 <a href="https://ltr25.lnk.to/TheAir">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/_LTR25_TheAirDVSG081.jpg" alt="Embee &amp; Ayla Shatz - The Air">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/_LTR25_TheAirDVSG081.jpg" alt="Embee &amp; Ayla - The Air">
                                 </a>
                             </div>
                             <div class="release__col1">
-                                <div class="release__artist">Embee &amp; Ayla Shatz</div>
+                                <div class="release__artist">Embee &amp; Ayla</div>
                                 <div class="release__title">The Air</div>
                                 <a href="https://ltr25.lnk.to/TheAir" class="release__link">Listen to single</a>
                             </div>
