@@ -103,14 +103,14 @@
                         </div>
                         <div class="content-right">
                             <h1>Check back every friday for a brand new release!</h1>
-                            <h2>Next release on May 19, 2017</h2>
+                            <h2>Next release on May 26, 2017</h2>
                         </div>
                     </header>
 
                     <div class="releases-list">
                         <div class="release release--unreleased">
                             <div class="release__img">
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/03_LTR25_NextReleaseMAY19.jpg" alt="Available May 19">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/04_LTR25_NextReleaseMAY26.jpg" alt="Available May 26">
                             </div>
                             <div class="release__col1">
                                 <div class="release__artist">Artist</div>
@@ -119,8 +119,30 @@
                             </div>
                             <div class="release__col2">
                                 <div class="release__id">DVSGXXX</div>
-                                <div class="release__date">May 19, 2017</div>
+                                <div class="release__date">May 26, 2017</div>
                                 <a href="" class="release__ext-link">
+                                    <svg viewBox="0 0 64 64">
+                                        <use xlink:href="#linkfire"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="release">
+                            <div class="release__img">
+                                <a href="https://ltr25.lnk.to/Shivers">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/_LTR25_ShiversDVSG083.jpg" alt="Embee - Shivers">
+                                </a>
+                            </div>
+                            <div class="release__col1">
+                                <div class="release__artist">Embee</div>
+                                <div class="release__title">Shivers</div>
+                                <a href="https://ltr25.lnk.to/Shivers" class="release__link">Listen to single</a>
+                            </div>
+                            <div class="release__col2">
+                                <div class="release__id">DVSG083</div>
+                                <div class="release__date">May 19, 2017</div>
+                                <a href="https://ltr25.lnk.to/Shivers" class="release__ext-link">
                                     <svg viewBox="0 0 64 64">
                                         <use xlink:href="#linkfire"></use>
                                     </svg>
