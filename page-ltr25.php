@@ -103,14 +103,14 @@
                         </div>
                         <div class="content-right">
                             <h1>Check back every friday for a brand new release!</h1>
-                            <h2>Next release on June 2, 2017</h2>
+                            <h2>Next release on June 9, 2017</h2>
                         </div>
                     </header>
 
                     <div class="releases-list">
                         <div class="release release--unreleased">
                             <div class="release__img">
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/05_LTR25_NextReleaseJUNE2.jpg" alt="Available June 2">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/06_LTR25_NextReleaseJUNE9.jpg" alt="Available June 9">
                             </div>
                             <div class="release__col1">
                                 <div class="release__artist">Artist</div>
@@ -119,8 +119,30 @@
                             </div>
                             <div class="release__col2">
                                 <div class="release__id">DVSGXXX</div>
-                                <div class="release__date">June 2, 2017</div>
+                                <div class="release__date">June 9, 2017</div>
                                 <a href="" class="release__ext-link">
+                                    <svg viewBox="0 0 64 64">
+                                        <use xlink:href="#linkfire"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="release">
+                            <div class="release__img">
+                                <a href="https://ltr25.lnk.to/RunDeep">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/_LTR25_RunDeepDVSG085.jpg" alt="Promoe & Embee - Run Deep">
+                                </a>
+                            </div>
+                            <div class="release__col1">
+                                <div class="release__artist">Promoe &amp; Embee</div>
+                                <div class="release__title">Run Deep</div>
+                                <a href="https://ltr25.lnk.to/RunDeep" class="release__link">Listen to single</a>
+                            </div>
+                            <div class="release__col2">
+                                <div class="release__id">DVSG085</div>
+                                <div class="release__date">June 2, 2017</div>
+                                <a href="https://ltr25.lnk.to/RunDeep" class="release__ext-link">
                                     <svg viewBox="0 0 64 64">
                                         <use xlink:href="#linkfire"></use>
                                     </svg>
