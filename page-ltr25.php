@@ -131,7 +131,7 @@
                         <div class="release">
                             <div class="release__img">
                                 <a href="https://ltr25.lnk.to/RunDeep">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/_LTR25_RunDeepDVSG085.jpg" alt="Promoe & Embee - Run Deep">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/_LTR25_RunDeepDVSG085.jpg" alt="Promoe &amp; Embee - Run Deep">
                                 </a>
                             </div>
                             <div class="release__col1">
@@ -267,14 +267,14 @@
             <section class="press">
                 <aside class="intro">
                     Press
-                    <div>Photos, logos & bio</div>
+                    <div>Photos, logos &amp; bio</div>
                 </aside>
                 <div class="content-right">
 
                     <header>
 
                         <h1>Photos, logos, bio and press-kit</h1>
-                        <h2>Photos by <a href="https://www.facebook.com/ErikbyErikPhotography/">Erik by Erik</a> & <a href="https://www.brunobaptista.com/">Bruno Baptista</a></h2>
+                        <h2>Photos by <a href="https://www.facebook.com/ErikbyErikPhotography/">Erik by Erik</a> &amp; <a href="https://www.brunobaptista.com/">Bruno Baptista</a></h2>
                     </header>
 
                     <section class="press-section">
