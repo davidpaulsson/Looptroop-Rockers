@@ -120,7 +120,7 @@
                             <div class="release__col2">
                                 <div class="release__id">DVSGXXX</div>
                                 <div class="release__date">June 9, 2017</div>
-                                <a href="" class="release__ext-link">
+                                <a href="javascript:;" class="release__ext-link">
                                     <svg viewBox="0 0 64 64">
                                         <use xlink:href="#linkfire"></use>
                                     </svg>
