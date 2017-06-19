@@ -110,7 +110,7 @@
                     <div class="releases-list">
                         <div class="release release--unreleased">
                             <div class="release__img">
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/07_LTR25_NextReleaseJUNE23.jpg" alt="Available June 23">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/08_LTR25_NextReleaseJUNE23.jpg" alt="Available June 23">
                             </div>
                             <div class="release__col1">
                                 <div class="release__artist">Artist</div>
