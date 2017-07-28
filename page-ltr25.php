@@ -103,14 +103,14 @@
                         </div>
                         <div class="content-right">
                             <h1>Check back every friday for a brand new release!</h1>
-                            <h2>Next release on July 28, 2017</h2>
+                            <h2>Next release on August 4, 2017</h2>
                         </div>
                     </header>
 
                     <div class="releases-list">
                         <div class="release release--unreleased">
                             <div class="release__img">
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/13_LTR25_NextReleaseJULY28.jpg" alt="Available July 28">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/13_LTR25_NextReleaseJULY28.jpg" alt="Available August 4">
                             </div>
                             <div class="release__col1">
                                 <div class="release__artist">Artist</div>
@@ -119,8 +119,30 @@
                             </div>
                             <div class="release__col2">
                                 <div class="release__id">DVSGXXX</div>
-                                <div class="release__date">July 28, 2017</div>
+                                <div class="release__date">August 4, 2017</div>
                                 <a href="javascript:;" class="release__ext-link">
+                                    <svg viewBox="0 0 64 64">
+                                        <use xlink:href="#linkfire"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="release">
+                            <div class="release__img">
+                                <a href="https://lnk.to/LTRHibernation">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/_LTR25_HibernationDVSG093.jpg" alt="Looptroop Rockers - Hibernation">
+                                </a>
+                            </div>
+                            <div class="release__col1">
+                                <div class="release__artist">Looptroop Rockers</div>
+                                <div class="release__title">Hibernation</div>
+                                <a href="https://lnk.to/LTRHibernation" class="release__link">Listen to single</a>
+                            </div>
+                            <div class="release__col2">
+                                <div class="release__id">DVSG093</div>
+                                <div class="release__date">July 28, 2017</div>
+                                <a href="https://lnk.to/LTRHibernation" class="release__ext-link">
                                     <svg viewBox="0 0 64 64">
                                         <use xlink:href="#linkfire"></use>
                                     </svg>
