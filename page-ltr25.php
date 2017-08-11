@@ -131,7 +131,7 @@
                         <div class="release">
                             <div class="release__img">
                                 <a href="https://ltr25.lnk.to/WhileBrighteningTheClouds">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/_LTR25_TinyHandsDVSG094.jpg" alt="Embudo - While Brightening The Clouds">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/_LTR25_Embudo2DVSG095.jpg" alt="Embudo - While Brightening The Clouds">
                                 </a>
                             </div>
                             <div class="release__col1">
