@@ -103,14 +103,14 @@
                         </div>
                         <div class="content-right">
                             <h1>Check back every friday for a brand new release!</h1>
-                            <h2>Next release on August 11, 2017</h2>
+                            <h2>Next release on August 18, 2017</h2>
                         </div>
                     </header>
 
                     <div class="releases-list">
                         <div class="release release--unreleased">
                             <div class="release__img">
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/13_LTR25_NextReleaseJULY28.jpg" alt="Available August 11">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/16_LTR25_NextReleaseAUGUST18.jpg" alt="Available August 18">
                             </div>
                             <div class="release__col1">
                                 <div class="release__artist">Artist</div>
@@ -119,8 +119,30 @@
                             </div>
                             <div class="release__col2">
                                 <div class="release__id">DVSGXXX</div>
-                                <div class="release__date">August 11, 2017</div>
+                                <div class="release__date">August 18, 2017</div>
                                 <a href="javascript:;" class="release__ext-link">
+                                    <svg viewBox="0 0 64 64">
+                                        <use xlink:href="#linkfire"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="release">
+                            <div class="release__img">
+                                <a href="https://ltr25.lnk.to/WhileBrighteningTheClouds">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/_LTR25_TinyHandsDVSG094.jpg" alt="Embudo - While Brightening The Clouds">
+                                </a>
+                            </div>
+                            <div class="release__col1">
+                                <div class="release__artist">Embudo</div>
+                                <div class="release__title">While Brightening The Clouds</div>
+                                <a href="https://ltr25.lnk.to/WhileBrighteningTheClouds" class="release__link">Listen to single</a>
+                            </div>
+                            <div class="release__col2">
+                                <div class="release__id">DVSG095</div>
+                                <div class="release__date">August 11, 2017</div>
+                                <a href="https://ltr25.lnk.to/WhileBrighteningTheClouds" class="release__ext-link">
                                     <svg viewBox="0 0 64 64">
                                         <use xlink:href="#linkfire"></use>
                                     </svg>
