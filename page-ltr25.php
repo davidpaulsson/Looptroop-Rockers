@@ -103,14 +103,14 @@
                         </div>
                         <div class="content-right">
                             <h1>Check back every friday for a brand new release!</h1>
-                            <h2>Next release on August 25, 2017</h2>
+                            <h2>Next release on September 8, 2017</h2>
                         </div>
                     </header>
 
                     <div class="releases-list">
                         <div class="release release--unreleased">
                             <div class="release__img">
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/17_LTR25_NextReleaseAUGUST25.jpg" alt="Available August 25">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/19_LTR25_NextReleaseSEPTEMBER8.jpg" alt="Available September 8">
                             </div>
                             <div class="release__col1">
                                 <div class="release__artist">Artist</div>
@@ -119,8 +119,52 @@
                             </div>
                             <div class="release__col2">
                                 <div class="release__id">DVSGXXX</div>
-                                <div class="release__date">August 25, 2017</div>
+                                <div class="release__date">September 8, 2017</div>
                                 <a href="javascript:;" class="release__ext-link">
+                                    <svg viewBox="0 0 64 64">
+                                        <use xlink:href="#linkfire"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="release">
+                            <div class="release__img">
+                                <a href="https://LTR25.lnk.to/EasyLove">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/_LTR25_EasyLoveDVSG098.jpg" alt="Embee & Ayla - Easy Love">
+                                </a>
+                            </div>
+                            <div class="release__col1">
+                                <div class="release__artist">Embee &amp; Ayla</div>
+                                <div class="release__title">Easy Love</div>
+                                <a href="https://LTR25.lnk.to/EasyLove" class="release__link">Listen to single</a>
+                            </div>
+                            <div class="release__col2">
+                                <div class="release__id">DVSG098</div>
+                                <div class="release__date">September 1, 2017</div>
+                                <a href="https://LTR25.lnk.to/EasyLove" class="release__ext-link">
+                                    <svg viewBox="0 0 64 64">
+                                        <use xlink:href="#linkfire"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="release">
+                            <div class="release__img">
+                                <a href="https://LTR25.lnk.to/GoodTimesForAChange">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/_LTR25_GoodTimesDVSG097.jpg" alt="Looptroop Rockers - Good Times For A Change feat. Chords">
+                                </a>
+                            </div>
+                            <div class="release__col1">
+                                <div class="release__artist">Looptroop Rockers</div>
+                                <div class="release__title">Good Times For A Change feat. Chords</div>
+                                <a href="https://LTR25.lnk.to/GoodTimesForAChange" class="release__link">Listen to single</a>
+                            </div>
+                            <div class="release__col2">
+                                <div class="release__id">DVSG097</div>
+                                <div class="release__date">August 25, 2017</div>
+                                <a href="https://LTR25.lnk.to/GoodTimesForAChange" class="release__ext-link">
                                     <svg viewBox="0 0 64 64">
                                         <use xlink:href="#linkfire"></use>
                                     </svg>
