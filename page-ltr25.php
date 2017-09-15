@@ -103,14 +103,14 @@
                         </div>
                         <div class="content-right">
                             <h1>Check back every friday for a brand new release!</h1>
-                            <h2>Next release on September 8, 2017</h2>
+                            <h2>Next release on September 22, 2017</h2>
                         </div>
                     </header>
 
                     <div class="releases-list">
                         <div class="release release--unreleased">
                             <div class="release__img">
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/19_LTR25_NextReleaseSEPTEMBER8.jpg" alt="Available September 8">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/21_LTR25_NextReleaseSEPTEMBER22.jpg" alt="Available September 22">
                             </div>
                             <div class="release__col1">
                                 <div class="release__artist">Artist</div>
@@ -119,8 +119,52 @@
                             </div>
                             <div class="release__col2">
                                 <div class="release__id">DVSGXXX</div>
-                                <div class="release__date">September 8, 2017</div>
+                                <div class="release__date">September 22, 2017</div>
                                 <a href="javascript:;" class="release__ext-link">
+                                    <svg viewBox="0 0 64 64">
+                                        <use xlink:href="#linkfire"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="release">
+                            <div class="release__img">
+                                <a href="https://ltr25.lnk.to/DropMeByTheTube">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/_LTR25_DropMeByTheTubeDVSG100.jpg" alt="Embee - Drop Me By The Tube">
+                                </a>
+                            </div>
+                            <div class="release__col1">
+                                <div class="release__artist">Embee</div>
+                                <div class="release__title">Drop Me By The Tube</div>
+                                <a href="https://ltr25.lnk.to/DropMeByTheTube" class="release__link">Listen to single</a>
+                            </div>
+                            <div class="release__col2">
+                                <div class="release__id">DVSG100</div>
+                                <div class="release__date">September 15, 2017</div>
+                                <a href="https://ltr25.lnk.to/DropMeByTheTube" class="release__ext-link">
+                                    <svg viewBox="0 0 64 64">
+                                        <use xlink:href="#linkfire"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="release">
+                            <div class="release__img">
+                                <a href="https://LTR25.lnk.to/Terroritmo">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/_LTR25_TerroritmoDVSG099.jpg" alt="Promoe & Embee - Terroritmo">
+                                </a>
+                            </div>
+                            <div class="release__col1">
+                                <div class="release__artist">Promoe & Embee</div>
+                                <div class="release__title">Terroritmo</div>
+                                <a href="https://LTR25.lnk.to/Terroritmo" class="release__link">Listen to single</a>
+                            </div>
+                            <div class="release__col2">
+                                <div class="release__id">DVSG099</div>
+                                <div class="release__date">September 8, 2017</div>
+                                <a href="https://LTR25.lnk.to/Terroritmo" class="release__ext-link">
                                     <svg viewBox="0 0 64 64">
                                         <use xlink:href="#linkfire"></use>
                                     </svg>
