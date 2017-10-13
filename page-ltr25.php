@@ -102,32 +102,12 @@
                             <div>Weekly</div>
                         </div>
                         <div class="content-right">
-                            <h1>Check back every friday for a brand new release!</h1>
-                            <h2>Next release on October 13, 2017</h2>
+                            <h1><del>Check back every friday for a brand new release!</del></h1>
+                            <h2>You can find all 25 releases below</h2>
                         </div>
                     </header>
 
                     <div class="releases-list">
-                        <div class="release release--unreleased">
-                            <div class="release__img">
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/24_LTR25_NextReleaseOCTOBER13.jpg" alt="Available October 13">
-                            </div>
-                            <div class="release__col1">
-                                <div class="release__artist">Artist</div>
-                                <div class="release__title">Release name</div>
-                                <div class="release__link"><del>Listen to single</del></div>
-                            </div>
-                            <div class="release__col2">
-                                <div class="release__id">DVSGXXX</div>
-                                <div class="release__date">October 13, 2017</div>
-                                <a href="javascript:;" class="release__ext-link">
-                                    <svg viewBox="0 0 64 64">
-                                        <use xlink:href="#linkfire"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-
                         <div class="release">
                             <div class="release__img">
                                 <a href="https://ltr25.lnk.to/LooseAfterMidnight">
