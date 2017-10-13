@@ -130,6 +130,28 @@
 
                         <div class="release">
                             <div class="release__img">
+                                <a href="https://ltr25.lnk.to/LooseAfterMidnight">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/_LTR25_LooseAfterMidnightDVSG104.jpg" alt="Looptroop Rockers - Loose After Midnight feat. Timbuktu">
+                                </a>
+                            </div>
+                            <div class="release__col1">
+                                <div class="release__artist">Looptroop Rockers</div>
+                                <div class="release__title">Loose After Midnight feat. Timbuktu</div>
+                                <a href="https://ltr25.lnk.to/LooseAfterMidnight" class="release__link">Listen to single</a>
+                            </div>
+                            <div class="release__col2">
+                                <div class="release__id">DVSG104</div>
+                                <div class="release__date">October 13, 2017</div>
+                                <a href="https://ltr25.lnk.to/LooseAfterMidnight" class="release__ext-link">
+                                    <svg viewBox="0 0 64 64">
+                                        <use xlink:href="#linkfire"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="release">
+                            <div class="release__img">
                                 <a href="https://ltr25.lnk.to/Serenity">
                                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/_LTR25_SerenityDVSG103.jpg" alt="Promoe - Serenity">
                                 </a>
