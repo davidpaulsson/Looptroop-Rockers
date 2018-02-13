@@ -44,8 +44,8 @@
         <h3>Tour questions</h3>
         <ul>
           <li>
-            <strong>Claes Nordin Tärby</strong><br>
-            claes (a) newdirection . nu
+            <strong>Peter Sehlin</strong><br>
+            peter (a) sucky . se
           </li>
         </ul>
       </div>
