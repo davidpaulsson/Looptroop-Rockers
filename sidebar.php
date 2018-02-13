@@ -8,13 +8,22 @@
 
 <div id="secondary" class="widget-area" role="complementary">
   <div class="widget-area__yt">
-    <?php /* hacky solution to get the latest CB video on top, for now,
+    <?php /* hacky solution to get the latest video(s) on top, for now,
     need to redo this video solution some day... */ ?>
+
     <p>
-      <iframe width="390" height="219" src="https://www.youtube.com/embed/ofU4HPSFDpA" frameborder="0" allowfullscreen ></iframe>
+      <iframe width="390" height="219" src="https://www.youtube.com/embed/4VHQ1V-9zHk" frameborder="0" allowfullscreen ></iframe>
     </p>
 
     <div class="videoitem active">
+      <div class="videothumb">
+        <a href="https://www.youtube.com/embed/ofU4HPSFDpA" class="watchvideo">
+          <img src="https://i4.ytimg.com/vi/4VHQ1V-9zHk/hqdefault.jpg" alt="Looptroop Rockers - Loose After Midnight feat. Timbuktu (Official Video)">
+        </a>
+      </div>
+    </div>
+
+    <div class="videoitem">
       <div class="videothumb">
         <a href="https://www.youtube.com/embed/ofU4HPSFDpA" class="watchvideo">
           <img src="https://i4.ytimg.com/vi/ofU4HPSFDpA/hqdefault.jpg" alt="The Casual Brothers - Guarantees feat. Ayla Shatz (Official Video)">
@@ -54,7 +63,7 @@
       // Continue loop, unless we're at the last
       // item and we're not at 16 videos yet.
       if ($i == $len) {
-        if ($i < 15) {
+        if ($i < 14) {
           error_reporting(E_ALL);
           $videosLeft = 16 - $i;
           $feedURL = 'https://www.youtube.com/feeds/videos.xml?user=dvsgee';
@@ -68,7 +77,7 @@
 
             $thumbnail = (string)$media->group->thumbnail[0]->attributes()->url;
 
-            if ($i < 15) {
+            if ($i < 14) {
               ?>
 
                 <div class="videoitem">
