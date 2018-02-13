@@ -19,7 +19,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-<a href="<?php echo esc_url( home_url() ); ?>/ltr25"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ltr25/_LTR25_BANNER.jpg" alt="Looptroop Rockers 25 years" style="margin: 0 auto; display: block;"></a>
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'ltr' ); ?></a>
 
