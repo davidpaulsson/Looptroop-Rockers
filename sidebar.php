@@ -11,32 +11,12 @@
     <?php /* hacky solution to get the latest video(s) on top, for now,
     need to redo this video solution some day... */ ?>
 
-    <p>
-      <iframe width="390" height="219" src="https://www.youtube.com/embed/4VHQ1V-9zHk" frameborder="0" allowfullscreen ></iframe>
-    </p>
-
-    <div class="videoitem active">
-      <div class="videothumb">
-        <a href="https://www.youtube.com/embed/ofU4HPSFDpA" class="watchvideo">
-          <img src="https://i4.ytimg.com/vi/4VHQ1V-9zHk/hqdefault.jpg" alt="Looptroop Rockers - Loose After Midnight feat. Timbuktu (Official Video)">
-        </a>
-      </div>
-    </div>
-
-    <div class="videoitem">
-      <div class="videothumb">
-        <a href="https://www.youtube.com/embed/ofU4HPSFDpA" class="watchvideo">
-          <img src="https://i4.ytimg.com/vi/ofU4HPSFDpA/hqdefault.jpg" alt="The Casual Brothers - Guarantees feat. Ayla Shatz (Official Video)">
-        </a>
-      </div>
-    </div>
-
     <?php
     /* start looping the videos properly now... */
     error_reporting(E_ALL);
-    $feedURL = 'https://www.youtube.com/feeds/videos.xml?user=LooptroopRockersVEVO';
+    $feedURL = 'https://www.youtube.com/feeds/videos.xml?channel_id=UCPwK_VC6WK9HMrQAwmSMk8g';
     $sxml = simplexml_load_file($feedURL);
-    $i=1;
+    $i=0;
     $len = count($sxml->entry);
 
     foreach ($sxml->entry as $entry) {
@@ -63,7 +43,34 @@
       // Continue loop, unless we're at the last
       // item and we're not at 16 videos yet.
       if ($i == $len) {
-        if ($i < 14) {
+        if ($i < 16) {
+          error_reporting(E_ALL);
+          $videosLeft = 16 - $i;
+          $feedURL = 'https://www.youtube.com/feeds/videos.xml?user=LooptroopRockersVEVO';
+          $sxml = simplexml_load_file($feedURL);
+
+          foreach ($sxml->entry as $entry) {
+            $media = $entry->children('media', true);
+            $watch = (string)$media->group->content->attributes()->url;
+            $watch2 = str_replace('/v/', '/embed/', $watch);
+            $watch3 = str_replace('?version=3', '', $watch2);
+
+            $thumbnail = (string)$media->group->thumbnail[0]->attributes()->url;
+
+            if ($i < 16) {
+              ?>
+
+                <div class="videoitem">
+                  <div class="videothumb"><a href="<?php echo $watch3; ?>" class="watchvideo"><img src="<?php echo $thumbnail;?>" alt="<?php echo $media->group->title; ?>" /></a></div>
+                </div>
+
+              <?php
+              }
+            $i++;
+          }
+        }
+
+        if ($i < 16) {
           error_reporting(E_ALL);
           $videosLeft = 16 - $i;
           $feedURL = 'https://www.youtube.com/feeds/videos.xml?user=dvsgee';
@@ -77,7 +84,7 @@
 
             $thumbnail = (string)$media->group->thumbnail[0]->attributes()->url;
 
-            if ($i < 14) {
+            if ($i < 16) {
               ?>
 
                 <div class="videoitem">
